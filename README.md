@@ -39,7 +39,7 @@ As well as specifications, we also have some implementations in this repository.
 
 #### C Implementations
 
-- [c-multihash](c-multihash https://github.com/multiformats/c-multihash) (_Only parsing and encoding, and not hashing._)
+- [c-multihash](https://github.com/multiformats/c-multihash) (_Only parsing and encoding, and not hashing._)
 
 ### Other Repositories
 
