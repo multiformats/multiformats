@@ -80,6 +80,10 @@ This community moves very fast, and documentation swiftly gets out of date. If y
 
 If anyone has any issues understanding the English documentation, please let us know! If you would like to do so privately, please email [@RichardLitt](richardlitt@ipfs.io). We are very sensitive to language issues, and do not want to turn anyone away from hacking because of their language.
 
+### Email List
+
+We do not have an email listserv; all of our conversation is in GitHub. If you would like one, please post in [this issue](https://github.com/multiformats/multiformats/issues/9).
+
 ### Helping in other ways
 
 Protocol Labs occasionally is able to hire developers for part time or full time positions, to work on Multiformats. If you are interested, check out [the job listings](http://ipn.io/join/#pm). If you'd like to help in other ways, [email @jbenet directly](mailto:juan@ipfs.io?subject=Contributing to Multiformats).
