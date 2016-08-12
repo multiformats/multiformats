@@ -5,14 +5,19 @@
 
 > The main repository for discussing multiformats
 
-Currently, we have four stable multiformat protocols:
+Currently, we have the following multiformat protocols:
 
-- [multiaddr](https://github.com/multiformats/multiaddr)
-- [multicodec](https://github.com/multiformats/multicodec)
-- [multihash](https://github.com/multiformats/multihash)
-- multistream](https://github.com/multiformats/multistream)
+| Repo | Captain | Status |
+|------|---------|--------|
+| [multiaddr](https://github.com/multiformats/multiaddr)| @jbenet | stable |
+| [multicodec](https://github.com/multiformats/multicodec)| @jbenet | stable |
+| [multihash](https://github.com/multiformats/multihash)| @jbenet | stable |
+| [multistream](https://github.com/multiformats/multistream)| @diasdavid | stable |
+| [multibase](https://github.com/ipfs/specs/issues/130) | | WIP |
+| [multigram](https://github.com/ipfs/specs/pull/123) | | WIP |
+| [multikey](https://github.com/ipfs/specs/issues/58) | | WIP |
 
-See the project directory, below, for implementations, protocols in progress, and other related repositories.
+See the project directory, below, for implementations and other related repositories.
 
 ## Table of Contents
 
@@ -65,25 +70,6 @@ Multiformats is the name for the organization, but it can also be used to refer 
 Below, a list of all of the projects in the Multiformats organization is listed.
 
 **Captains** are the active leads for each project. Their responsibilities are to make sure that issues and pull requests are attended to in a timely manner, and general upkeep. If you have questions about a repository, or need feedback, please contact them as appropriate.
-
-### Protocols
-
-Multiformats currently encompasses the following protocols:
-
-| Repo | Captain |
-|------|---------|
-| [multiaddr](https://github.com/multiformats/multiaddr)| @jbenet |
-| [multicodec](https://github.com/multiformats/multicodec)| @jbenet |
-| [multihash](https://github.com/multiformats/multihash)| @jbenet |
-| [multistream](https://github.com/multiformats/multistream)| @diasdavid |
-
-### Protocols in Progress
-
-These have not yet been fleshed out enough for their own repositories. See the links to contribute to conversations about them.
-
-- multibase ([WIP](https://github.com/ipfs/specs/issues/130))
-- multigram ([WIP](https://github.com/ipfs/specs/pull/123))
-- multikey ([WIP](https://github.com/ipfs/specs/issues/58))
 
 ### Implementations
 
