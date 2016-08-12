@@ -40,20 +40,26 @@ See the project directory, below, for implementations and other related reposito
 > "Never going to change" considered harmful.
 > -- @lgierth
 
-Every choice in computing is eventually incorrect. Allowing systems to evolve and grow is important.
+Every choice in computing has a tradeoff. This includes formats, algorithms, encodings, and so on. And even with a great deal of planning, decisions may lead to breaking changes down the road, or to solutions which are no longer optimal. Allowing systems to evolve and grow is important.
 
 Multiformats is a collection of protocols which aim to future-proof systems, today. They do this mainly by allowing data to be self-describable. This allows interoperability, protocol agility, and helps us avoid lock in. Currently, our protocols (both works in progress and implemented) cover the following areas:
 
-- multiaddr: network addresses
-- multibase: base encodings
-- multicodec: serialization codes
-- multihash: cryptographic hashes
-- multikey: cryptographic keys and artifacts
-- multistream: stream wire protocols
+- [multiaddr](https://github.com/multiformats/multiaddr): network addresses
+- [multibase](https://github.com/ipfs/specs/issues/130): base encodings
+- [multicodec](https://github.com/multiformats/multicodec): serialization codes
+- [multihash](https://github.com/multiformats/multihash): cryptographic hashes
+- [multikey](https://github.com/ipfs/specs/issues/58): cryptographic keys and artifacts
+- [multistream](https://github.com/multiformats/multistream): stream wire protocols
 
-The self-describing aspects of the protocols have a few stipulations: they must be in the value (not passed down through inheritance like in object oriented programming), they must be small and representably as binaries (or they will hinder performance), and they must (at some level) be human readable.
+The self-describing aspects of the protocols have a few stipulations:
 
-Several of the multiformats are stable: such as multiaddr, multicodec, multihash, and multistream. We're working on the others. We are trying to prioritize their usage as soon as possible, because protocol interoperability and future-proofing has real-world consequences. An easy example of this would include allowing systems to upgrade cryptographic hash functions, in case they are compromised. Towards that end, we are encouraging implementations to be made, in any possible language, for these protocols; if you know of any, please link them here (or add them to the organization!).
+- they must be in the value (not passed in out of band, in function calls, implicit choices, or documentation);
+- they must be compact and have a binary-packed representation (as opposed to a sparser encoding) or they will hinder performance;
+- they must have a human readable representation.
+
+Several of the multiformats are stabl, and we're working on the others. We are trying to prioritize their usage as soon as possible. What they offer -- protocol interoperability and future-proofing --  would have real-world consequences.
+
+Towards that end, we are encouraging implementations of these protocols; if you know of any, please link them here (or add them to the organization!).
 
 ### An Example: Multihash
 
