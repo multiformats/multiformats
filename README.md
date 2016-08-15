@@ -1,96 +1,133 @@
 # multiformats
 
-> The main repository for discussing multiformats.
+[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
+[![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
 
-> "Never going to change" considered harmful.
-> -- @lgierth
+> The main repository for discussing multiformats
 
-This is the home repository for the multiformats effort, which produces these protocols:
+Currently, we have the following multiformat protocols:
 
-- [multiaddr](//github.com/multiformats/multiaddr)
-- [multicodec](//github.com/multiformats/multicodec)
-- [multihash](//github.com/multiformats/multihash)
-- [multistream](//github.com/multiformats/multistream)
+| Repo | Captain | Status |
+|------|---------|--------|
+| [multiaddr](https://github.com/multiformats/multiaddr)| @jbenet | stable |
+| [multicodec](https://github.com/multiformats/multicodec)| @jbenet | stable |
+| [multihash](https://github.com/multiformats/multihash)| @jbenet | stable |
+| [multistream](https://github.com/multiformats/multistream)| @diasdavid | WIP |
+| [multibase](https://github.com/ipfs/specs/issues/130) | | WIP |
+| [multigram](https://github.com/ipfs/specs/pull/123) | | WIP |
+| [multikey](https://github.com/ipfs/specs/issues/58) | | WIP |
 
-### Works in Progress
+See the project directory, below, for implementations and other related repositories.
 
-These have not yet been fleshed out enough for their own repositories. See the links to contribute to conversations about them.
+## Table of Contents
 
-- multibase ([WIP](https://github.com/ipfs/specs/issues/130))
-- multigram ([WIP](https://github.com/ipfs/specs/pull/123))
-- multikey ([WIP](https://github.com/ipfs/specs/issues/58))
+- [Background](#background)
+  - [An Example: Multihash](#an-example-multihash)
+  - [A note on the word Multiformats](#a-note-on-the-word-multiformats)
+- [Project Directory](#project-directory)
+  - [Protocols](#protocols)
+  - [Protocols in Progress](#protocols-in-progress)
+  - [Implementations](#implementations)
+    - [Go Implementations](#go-implementations)
+    - [JavaScript Implementations](#javascript-implementations)
+    - [Other Implementations](#other-implementations)
+  - [Other Repositories](#other-repositories)
+- [Contribute](#contribute)
+- [License](#license)
+
+## Background
+
+Every choice in computing has a tradeoff. This includes formats, algorithms, encodings, and so on. And even with a great deal of planning, decisions may lead to breaking changes down the road, or to solutions which are no longer optimal. Allowing systems to evolve and grow is important.
+
+Multiformats is a collection of protocols which aim to future-proof systems, today. They do this mainly by allowing data to be self-describable. This allows interoperability, protocol agility, and helps us avoid lock in. Currently, our protocols (both works in progress and implemented) cover the following areas:
+
+- [multiaddr](https://github.com/multiformats/multiaddr): network addresses
+- [multibase](https://github.com/ipfs/specs/issues/130): base encodings
+- [multicodec](https://github.com/multiformats/multicodec): serialization codes
+- [multihash](https://github.com/multiformats/multihash): cryptographic hashes
+- [multikey](https://github.com/ipfs/specs/issues/58): cryptographic keys and artifacts
+- [multistream](https://github.com/multiformats/multistream): stream wire protocols
+
+The self-describing aspects of the protocols have a few stipulations:
+
+- they must be in the value (not passed in out of band, in function calls, implicit choices, or documentation);
+- they must be compact and have a binary-packed representation (as opposed to a sparser encoding) or they will hinder performance;
+- they must have a human readable representation.
+
+Several of the multiformats are stabl, and we're working on the others. We are trying to prioritize their usage as soon as possible. What they offer -- protocol interoperability and future-proofing --  would have real-world consequences.
+
+Towards that end, we are encouraging implementations of these protocols; if you know of any, please link them here (or add them to the organization!).
+
+### An Example: Multihash
+
+Multihash is a simple, easy to understand multiformat that shows how the multiformats can be used. Let's take a look at some standard hash functions:
+
+TODO @RichardLitt fill out.
+
+### A note on the word Multiformats
+
+Multiformats is the name for the organization, but it can also be used to refer to protocols; for instance, in the sentence "Use one of the multiformats". Formats is interchangeable with protocols, here. We try to capitalize Multiformats when it refers to the organization, on GitHub.
+
+## Project Directory
+
+Below, a list of all of the projects in the Multiformats organization is listed.
+
+**Captains** are the active leads for each project. Their responsibilities are to make sure that issues and pull requests are attended to in a timely manner, and general upkeep. If you have questions about a repository, or need feedback, please contact them as appropriate.
 
 ### Implementations
 
-As well as specifications, we also have some implementations in this repository.
+As well as specifications, we also have some implementations in the organization
 
-#### Go Implementations
+#### Multiaddr Implementations
 
-- [go-multiaddr](https://github.com/multiformats/go-multiaddr)
-- [go-multiaddr-net](https://github.com/multiformats/go-multiaddr-net)
-- [go-multicodec](https://github.com/multiformats/go-multicodec)
-- [go-multigram](https://github.com/multiformats/go-multigram)
-- [go-multihash](https://github.com/multiformats/go-multihash)
+| Repo | Captain |
+|------|-------------------|
+| [go-multiaddr](https://github.com/multiformats/go-multiaddr)| @whyrusleeping |
+| [go-multiaddr-net](https://github.com/multiformats/go-multiaddr-net)| @whyrusleeping |
+| [js-multiaddr](https://github.com/multiformats/js-multiaddr)| @diasdavid |
+| [rust-multiaddr](https://github.com/multiformats/rust-multiaddr)| @dignifiedquire | |
+| [SwiftMultiaddr](https://github.com/multiformats/SwiftMultiaddr)| @NeoTeo | |
 
-#### JavaScript Implementations
-- [js-multiaddr](https://github.com/multiformats/js-multiaddr)
-- [js-multihash](https://github.com/multiformats/js-multihash)
-- [js-multihashing](https://github.com/multiformats/js-multihashing)
+#### Multihash Implementations
 
-#### C Implementations
+| Repo | Captain |
+|------|-------------------|
+| [c-multihash](https://github.com/multiformats/c-multihash) | @Kubuxu | _Only parsing and encoding, and not hashing._ |
+| [ex_multihash](https://github.com/multiformats/ex_multihash)| @zabirauf | |
+| [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu |
+| [js-multihash](https://github.com/multiformats/js-multihash)| @diasdavid |
+| [js-multihashing](https://github.com/multiformats/js-multihashing)| @diasdavid |
+| [php-multihash](https://github.com/multiformats/php-multihash)| @Fil | |
+| [rust-multihash](https://github.com/multiformats/rust-multihash)| @dignifiedquire | |
+| [scala-multihash](https://github.com/multiformats/scala-multihash)| @parkan | |
+| [SwiftMultihash](https://github.com/multiformats/SwiftMultihash)| @NeoTeo | |
+| [MultiHash.Net (fork)](https://github.com/multiformats/MultiHash.Net)| @MCGPPeters | |
 
-- [c-multihash](https://github.com/multiformats/c-multihash) (_Only parsing and encoding, and not hashing._)
+#### Other Implementations
+
+| Repo | Captain | Note |
+|------|---------|------|
+| [go-multicodec](https://github.com/multiformats/go-multicodec)| @jbenet |
+| [go-multigram](https://github.com/multiformats/go-multigram)| @lgierth |
+| [go-multistream](https://github.com/multiformats/go-multistream)| @whyrusleeping |
+| [js-multistream](https://github.com/multiformats/js-multistream)| @diasdavid |
 
 ### Other Repositories
 
-- [specs](https://github.com/multiformats/specs) - Specification work regarding multihash, multiaddr, and others. _WIP._
-- [unsigned-varint](https://github.com/multiformats/unsigned-varint) - unsigned varint in use in multiformat specs. _WIP._
+| Repo | Captain | Note |
+|------|---------|------|
+| [multiformats](https://github.com/multiformats/multiformats)| @RichardLitt | This repository |
+| [specs](https://github.com/multiformats/specs)| @nicola | Specification work regarding multihash, multiaddr, and others. _WIP._ |
+| [unsigned-varint](https://github.com/multiformats/unsigned-varint) | @jbenet | unsigned varint in use in multiformat specs. _WIP._ |
 
-## Stub Explanation
+## Contribute
 
-While we write out a proper readme, here's some quick explanation slides:
+Please contribute! [Dive into the issues](https://github.com/multiformats/multiformats/issues)!
 
-![](img/multiformats.001.jpg)
-![](img/multiformats.002.jpg)
+Check out our [contributing document](contributing.md) for more information on how we work, and about contributing in general. Please be aware that all interactions related to multiformats are subject to the IPFS [Code of Conduct](https://github.com/ipfs/community/blob/master/code-of-conduct.md).
 
----
+Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
-### Example: Multihash
+## License
 
-![](img/multihash.001.jpg)
-
-#### Consider these 4 different hashes of same input
-
-![](img/multihash.002.jpg)
-
-#### Same length: 256 bits
-
-![](img/multihash.003.jpg)
-
-#### Different hash functions
-
-![](img/multihash.004.jpg)
-
-#### Idea: self-describe the values to distinguish
-
-![](img/multihash.005.jpg)
-
-#### Multihash: fn code + length prefix
-
-![](img/multihash.006.jpg)
-
-#### Multihash: a pretty good multiformat
-
-![](img/multihash.007.jpg)
-
-#### Multihash: has a bunch of implementations already
-
-![](img/multihash.008.jpg)
-
----
-
-### Example: Multiaddr
-
-Basic example of multiaddr
-
-![](img/multiaddr.001.jpg)
+This repository is mainly documents. All of these are licensed under the [CC-BY-SA 3.0](https://ipfs.io/ipfs/QmVreNvKsQmQZ83T86cWSjPu2vR3yZHGPm5jnxFuunEB9u) license, copyright Protocol Labs Inc.
