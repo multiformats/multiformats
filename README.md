@@ -81,39 +81,39 @@ Below, a list of all of the projects in the Multiformats organization is listed.
 
 As well as specifications, we also have some implementations in the organization
 
-#### Go Implementations
+#### Multiaddr Implementations
 
 | Repo | Captain |
 |------|-------------------|
 | [go-multiaddr](https://github.com/multiformats/go-multiaddr)| @whyrusleeping |
 | [go-multiaddr-net](https://github.com/multiformats/go-multiaddr-net)| @whyrusleeping |
-| [go-multicodec](https://github.com/multiformats/go-multicodec)| @jbenet |
-| [go-multigram](https://github.com/multiformats/go-multigram)| @lgierth |
-| [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu |
-| [go-multistream](https://github.com/multiformats/go-multistream)| @whyrusleeping |
+| [js-multiaddr](https://github.com/multiformats/js-multiaddr)| @diasdavid |
+| [rust-multiaddr](https://github.com/multiformats/rust-multiaddr)| @dignifiedquire | |
+| [SwiftMultiaddr](https://github.com/multiformats/SwiftMultiaddr)| @NeoTeo | |
 
-#### JavaScript Implementations
+#### Multihash Implementations
 
 | Repo | Captain |
 |------|-------------------|
-| [js-multiaddr](https://github.com/multiformats/js-multiaddr)| @diasdavid |
+| [c-multihash](https://github.com/multiformats/c-multihash) | @Kubuxu | _Only parsing and encoding, and not hashing._ |
+| [ex_multihash](https://github.com/multiformats/ex_multihash)| @zabirauf | |
+| [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu |
 | [js-multihash](https://github.com/multiformats/js-multihash)| @diasdavid |
 | [js-multihashing](https://github.com/multiformats/js-multihashing)| @diasdavid |
-| [js-multistream](https://github.com/multiformats/js-multistream)| @diasdavid |
+| [php-multihash](https://github.com/multiformats/php-multihash)| @Fil | |
+| [rust-multihash](https://github.com/multiformats/rust-multihash)| @dignifiedquire | |
+| [scala-multihash](https://github.com/multiformats/scala-multihash)| @parkan | |
+| [SwiftMultihash](https://github.com/multiformats/SwiftMultihash)| @NeoTeo | |
+| [MultiHash.Net (fork)](https://github.com/multiformats/MultiHash.Net)| @MCGPPeters | |
 
 #### Other Implementations
 
 | Repo | Captain | Note |
 |------|---------|------|
-| [c-multihash](https://github.com/multiformats/c-multihash) | @Kubuxu | _Only parsing and encoding, and not hashing._ |
-| [ex_multihash](https://github.com/multiformats/ex_multihash)| @zabirauf | |
-| [MultiHash.Net (fork)](https://github.com/multiformats/MultiHash.Net)| @MCGPPeters | |
-| [php-multihash](https://github.com/multiformats/php-multihash)| @Fil | |
-| [rust-multiaddr](https://github.com/multiformats/rust-multiaddr)| @dignifiedquire | |
-| [rust-multihash](https://github.com/multiformats/rust-multihash)| @dignifiedquire | |
-| [scala-multihash](https://github.com/multiformats/scala-multihash)| @parkan | |
-| [SwiftMultiaddr](https://github.com/multiformats/SwiftMultiaddr)| @NeoTeo | |
-| [SwiftMultihash](https://github.com/multiformats/SwiftMultihash)| @NeoTeo | |
+| [go-multicodec](https://github.com/multiformats/go-multicodec)| @jbenet |
+| [go-multigram](https://github.com/multiformats/go-multigram)| @lgierth |
+| [go-multistream](https://github.com/multiformats/go-multistream)| @whyrusleeping |
+| [js-multistream](https://github.com/multiformats/js-multistream)| @diasdavid |
 
 ### Other Repositories
 
