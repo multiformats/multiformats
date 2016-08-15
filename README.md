@@ -12,7 +12,7 @@ Currently, we have the following multiformat protocols:
 | [multiaddr](https://github.com/multiformats/multiaddr)| @jbenet | stable |
 | [multicodec](https://github.com/multiformats/multicodec)| @jbenet | stable |
 | [multihash](https://github.com/multiformats/multihash)| @jbenet | stable |
-| [multistream](https://github.com/multiformats/multistream)| @diasdavid | stable |
+| [multistream](https://github.com/multiformats/multistream)| @diasdavid | WIP |
 | [multibase](https://github.com/ipfs/specs/issues/130) | | WIP |
 | [multigram](https://github.com/ipfs/specs/pull/123) | | WIP |
 | [multikey](https://github.com/ipfs/specs/issues/58) | | WIP |
@@ -36,9 +36,6 @@ See the project directory, below, for implementations and other related reposito
 - [License](#license)
 
 ## Background
-
-> "Never going to change" considered harmful.
-> -- @lgierth
 
 Every choice in computing has a tradeoff. This includes formats, algorithms, encodings, and so on. And even with a great deal of planning, decisions may lead to breaking changes down the road, or to solutions which are no longer optimal. Allowing systems to evolve and grow is important.
 
