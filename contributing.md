@@ -42,7 +42,7 @@ We want to keep the Multiformats community awesome, growing and collaborative. W
 
 - Stay on topic: Make sure that you are posting to the correct channel and avoid off-topic discussions. Remember when you update an issue or respond to an email you are potentially sending to a large number of people. Please consider this before you update. Also remember that nobody likes spam.
 
-There is also a more extensive [code-of-conduct](code-of-conduct.md).
+There is also a more extensive [https://github.com/ipfs/community/blob/master/code-of-conduct.md](code-of-conduct.md) which we follow, which can be found as part of the related IPFS organisation.
 
 ### Reporting Issues
 

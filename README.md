@@ -127,7 +127,7 @@ As well as specifications, we also have some implementations in the organization
 
 Please contribute! [Dive into the issues](https://github.com/multiformats/multiformats/issues)!
 
-Check out our [contributing document](contributing.md) for more information on how we work, and about contributing in general. Please be aware that all interactions related to multiformats are subject to the [Code of Conduct](code-of-conduct.md).
+Check out our [contributing document](contributing.md) for more information on how we work, and about contributing in general. Please be aware that all interactions related to multiformats are subject to the IPFS [Code of Conduct](https://github.com/ipfs/community/blob/master/code-of-conduct.md).
 
 Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
