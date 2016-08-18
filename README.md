@@ -54,7 +54,7 @@ The self-describing aspects of the protocols have a few stipulations:
 - they must be compact and have a binary-packed representation (as opposed to a sparser encoding) or they will hinder performance;
 - they must have a human readable representation.
 
-Several of the multiformats are stabl, and we're working on the others. We are trying to prioritize their usage as soon as possible. What they offer -- protocol interoperability and future-proofing --  would have real-world consequences.
+Several of the multiformats are stable, and we're working on the others. We are trying to prioritize their usage as soon as possible. What they offer -- protocol interoperability and future-proofing --  would have real-world consequences.
 
 Towards that end, we are encouraging implementations of these protocols; if you know of any, please link them here (or add them to the organization!).
 
