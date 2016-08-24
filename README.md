@@ -13,7 +13,7 @@ Currently, we have the following multiformat protocols:
 | [multicodec](https://github.com/multiformats/multicodec)| @jbenet | stable |
 | [multihash](https://github.com/multiformats/multihash)| @jbenet | stable |
 | [multistream](https://github.com/multiformats/multistream)| @diasdavid | WIP |
-| [multibase](https://github.com/ipfs/specs/issues/130) | | WIP |
+| [multibase](https://github.com/multiformats/multibase) | @jbenet | WIP |
 | [multigram](https://github.com/ipfs/specs/pull/123) | | WIP |
 | [multikey](https://github.com/ipfs/specs/issues/58) | | WIP |
 
@@ -42,7 +42,7 @@ Every choice in computing has a tradeoff. This includes formats, algorithms, enc
 Multiformats is a collection of protocols which aim to future-proof systems, today. They do this mainly by allowing data to be self-describable. This allows interoperability, protocol agility, and helps us avoid lock in. Currently, our protocols (both works in progress and implemented) cover the following areas:
 
 - [multiaddr](https://github.com/multiformats/multiaddr): network addresses
-- [multibase](https://github.com/ipfs/specs/issues/130): base encodings
+- [multibase](https://github.com/multiformats/multibase): base encodings
 - [multicodec](https://github.com/multiformats/multicodec): serialization codes
 - [multihash](https://github.com/multiformats/multihash): cryptographic hashes
 - [multikey](https://github.com/ipfs/specs/issues/58): cryptographic keys and artifacts
