@@ -19,6 +19,9 @@ Currently, we have the following multiformat protocols:
 
 See the project directory, below, for implementations and other related repositories.
 
+![](img/multiformats.001.jpg)
+![](img/multiformats.002.jpg)
+
 ## Table of Contents
 
 - [Background](#background)
