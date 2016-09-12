@@ -122,6 +122,7 @@ As well as specifications, we also have some implementations in the organization
 | [multiformats](https://github.com/multiformats/multiformats)| @RichardLitt | This repository |
 | [specs](https://github.com/multiformats/specs)| @nicola | Specification work regarding multihash, multiaddr, and others. _WIP._ |
 | [unsigned-varint](https://github.com/multiformats/unsigned-varint) | @jbenet | unsigned varint in use in multiformat specs. _WIP._ |
+| [clj-varint](https://github.com/multiformats/clj-varint) | @ekroon | Simple wrapper around Bazel VarInt code.
 
 ## Contribute
 
