@@ -114,7 +114,7 @@ As well as specifications, we also have some implementations in the organization
 | [go-multicodec](https://github.com/multiformats/go-multicodec)| @jbenet |
 | [go-multigram](https://github.com/multiformats/go-multigram)| @lgierth |
 | [go-multistream](https://github.com/multiformats/go-multistream)| @whyrusleeping |
-| [js-multistream](https://github.com/multiformats/js-multistream)| @diasdavid |
+| [js-multistream](https://github.com/multiformats/js-multistream-select)| @diasdavid |
 
 ### Other Repositories
 
