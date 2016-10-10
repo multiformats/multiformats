@@ -98,31 +98,48 @@ As well as specifications, we also have some implementations in the organization
 | Repo | Captain | Note |
 |------|---------|------|
 | [c-multihash](https://github.com/multiformats/c-multihash) | @Kubuxu | _Only parsing and encoding, and not hashing._ |
+| [c-multihashing](https://github.com/multiformats/c-multihashing) | @Kubuxu | |
+| [clj-multihash](https://github.com/multiformats/clj-multihash) | @greglook | |
 | [ex_multihash](https://github.com/multiformats/ex_multihash)| @zabirauf | |
 | [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu | |
+| [haskell-multihash](https://github.com/multiformats/haskell-multihash) | @LukeHoersten | |
 | [java-multihash](https://github.com/multiformats/java-multihash) | @ianopolous | |
 | [js-multihash](https://github.com/multiformats/js-multihash)| @diasdavid | |
+| [js-multihashing-async](https://github.com/multiformats/js-multihashing-async) | @dignifiedquire | |
 | [js-multihashing](https://github.com/multiformats/js-multihashing)| @diasdavid | |
+| [MultiHash.Net (fork)](https://github.com/multiformats/MultiHash.Net) | @MCGPPeters | |
 | [php-multihash](https://github.com/multiformats/php-multihash)| @Fil | |
 | [ruby-multihash](https://github.com/multiformats/ruby-multihash)| @kyledrake | |
 | [rust-multihash](https://github.com/multiformats/rust-multihash)| @dignifiedquire | |
 | [scala-multihash](https://github.com/multiformats/scala-multihash)| @parkan | |
 | [SwiftMultihash](https://github.com/multiformats/SwiftMultihash)| @NeoTeo | |
-| [MultiHash.Net (fork)](https://github.com/multiformats/MultiHash.Net) | @MCGPPeters | |
+
+#### Multicodec Implementations
+
+| Repo | Captain | Note |
+|------|---------|------|
+| [clj-multicodec](https://github.com/multiformats/clj-multicodec) | @greglook | |
+| [go-multicodec-packed](https://github.com/multiformats/go-multicodec-packed) | @whyrusleeping | |
+| [go-multicodec](https://github.com/multiformats/go-multicodec)| @jbenet | |
+| [js-multicodec](https://github.com/multiformats/js-multicodec) | @diasdavid | |
 
 #### Other Implementations
 
 | Repo | Captain | Note |
 |------|---------|------|
-| [go-multicodec](https://github.com/multiformats/go-multicodec)| @jbenet | |
+| [go-multibase](https://github.com/multiformats/go-multibase) | @whyrusleeping | |
 | [go-multigram](https://github.com/multiformats/go-multigram)| @lgierth | |
 | [go-multistream](https://github.com/multiformats/go-multistream)| @whyrusleeping | |
+| [js-multibase](https://github.com/multiformats/js-multibase) | @diasdavid | |
+| [js-multistream-select](https://github.com/multiformats/js-multistream-select) | @diasdavid | |
 | [js-multistream](https://github.com/multiformats/js-multistream-select)| @diasdavid | |
 
 ### Other Repositories
 
 | Repo | Captain | Note |
 |------|---------|------|
+| [clj-varint](https://github.com/multiformats/clj-varint) | @ekroon | |
+| [ma-pipe](https://github.com/multiformats/ma-pipe) | @jbenet | |
 | [multiformats](https://github.com/multiformats/multiformats)| @RichardLitt | This repository |
 | [specs](https://github.com/multiformats/specs)| @nicola | Specification work regarding multihash, multiaddr, and others. _WIP._ |
 | [unsigned-varint](https://github.com/multiformats/unsigned-varint) | @jbenet | unsigned varint in use in multiformat specs. _WIP._ |
