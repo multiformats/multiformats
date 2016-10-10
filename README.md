@@ -88,6 +88,7 @@ As well as specifications, we also have some implementations in the organization
 |------|-------------------|
 | [go-multiaddr](https://github.com/multiformats/go-multiaddr)| @whyrusleeping |
 | [go-multiaddr-net](https://github.com/multiformats/go-multiaddr-net)| @whyrusleeping |
+| [java-multiaddr](https://github.com/multiformats/java-multiaddr)| @ianopolous |
 | [js-multiaddr](https://github.com/multiformats/js-multiaddr)| @diasdavid |
 | [rust-multiaddr](https://github.com/multiformats/rust-multiaddr)| @dignifiedquire |
 | [SwiftMultiaddr](https://github.com/multiformats/SwiftMultiaddr)| @NeoTeo |
@@ -99,6 +100,7 @@ As well as specifications, we also have some implementations in the organization
 | [c-multihash](https://github.com/multiformats/c-multihash) | @Kubuxu | _Only parsing and encoding, and not hashing._ |
 | [ex_multihash](https://github.com/multiformats/ex_multihash)| @zabirauf | |
 | [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu | |
+| [java-multihash](https://github.com/multiformats/java-multihash) | @ianopolous | |
 | [js-multihash](https://github.com/multiformats/js-multihash)| @diasdavid | |
 | [js-multihashing](https://github.com/multiformats/js-multihashing)| @diasdavid | |
 | [php-multihash](https://github.com/multiformats/php-multihash)| @Fil | |
