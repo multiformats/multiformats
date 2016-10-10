@@ -130,6 +130,8 @@ Please contribute! [Dive into the issues](https://github.com/multiformats/multif
 
 Check out our [contributing document](contributing.md) for more information on how we work, and about contributing in general. Please be aware that all interactions related to multiformats are subject to the IPFS [Code of Conduct](https://github.com/ipfs/community/blob/master/code-of-conduct.md).
 
+If you're interested in proposing a new format (in addition to multihash, multistream, and so on), [open an issue](https://github.com/multiformats/multiformats/issue/new) in this repository, explaining the name of the format, what it is for, and why you think it should become one of the multiformats. Pointing to any existing implementations would also be great, if there are any. If you want to implement a multiformat in a new language, open an issue in the main repository for the relevant multiformat: for instance, if you want to write rust-multicodec, open an issue in the multiformats/multicodec repository. This will allow others to know that you're working on it, and potentially join in the effort.
+
 Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## License
