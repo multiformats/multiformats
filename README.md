@@ -89,32 +89,32 @@ As well as specifications, we also have some implementations in the organization
 | [go-multiaddr](https://github.com/multiformats/go-multiaddr)| @whyrusleeping |
 | [go-multiaddr-net](https://github.com/multiformats/go-multiaddr-net)| @whyrusleeping |
 | [js-multiaddr](https://github.com/multiformats/js-multiaddr)| @diasdavid |
-| [rust-multiaddr](https://github.com/multiformats/rust-multiaddr)| @dignifiedquire | |
-| [SwiftMultiaddr](https://github.com/multiformats/SwiftMultiaddr)| @NeoTeo | |
+| [rust-multiaddr](https://github.com/multiformats/rust-multiaddr)| @dignifiedquire |
+| [SwiftMultiaddr](https://github.com/multiformats/SwiftMultiaddr)| @NeoTeo |
 
 #### Multihash Implementations
 
-| Repo | Captain |
-|------|-------------------|
+| Repo | Captain | Note |
+|------|---------|------|
 | [c-multihash](https://github.com/multiformats/c-multihash) | @Kubuxu | _Only parsing and encoding, and not hashing._ |
 | [ex_multihash](https://github.com/multiformats/ex_multihash)| @zabirauf | |
-| [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu |
-| [js-multihash](https://github.com/multiformats/js-multihash)| @diasdavid |
-| [js-multihashing](https://github.com/multiformats/js-multihashing)| @diasdavid |
+| [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu | |
+| [js-multihash](https://github.com/multiformats/js-multihash)| @diasdavid | |
+| [js-multihashing](https://github.com/multiformats/js-multihashing)| @diasdavid | |
 | [php-multihash](https://github.com/multiformats/php-multihash)| @Fil | |
 | [rust-multihash](https://github.com/multiformats/rust-multihash)| @dignifiedquire | |
 | [scala-multihash](https://github.com/multiformats/scala-multihash)| @parkan | |
 | [SwiftMultihash](https://github.com/multiformats/SwiftMultihash)| @NeoTeo | |
-| [MultiHash.Net (fork)](https://github.com/multiformats/MultiHash.Net)| @MCGPPeters | |
+| [MultiHash.Net (fork)](https://github.com/multiformats/MultiHash.Net) | @MCGPPeters | |
 
 #### Other Implementations
 
 | Repo | Captain | Note |
 |------|---------|------|
-| [go-multicodec](https://github.com/multiformats/go-multicodec)| @jbenet |
-| [go-multigram](https://github.com/multiformats/go-multigram)| @lgierth |
-| [go-multistream](https://github.com/multiformats/go-multistream)| @whyrusleeping |
-| [js-multistream](https://github.com/multiformats/js-multistream-select)| @diasdavid |
+| [go-multicodec](https://github.com/multiformats/go-multicodec)| @jbenet | |
+| [go-multigram](https://github.com/multiformats/go-multigram)| @lgierth | |
+| [go-multistream](https://github.com/multiformats/go-multistream)| @whyrusleeping | |
+| [js-multistream](https://github.com/multiformats/js-multistream-select)| @diasdavid | |
 
 ### Other Repositories
 
