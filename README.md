@@ -104,6 +104,7 @@ As well as specifications, we also have some implementations in the organization
 | [js-multihash](https://github.com/multiformats/js-multihash)| @diasdavid | |
 | [js-multihashing](https://github.com/multiformats/js-multihashing)| @diasdavid | |
 | [php-multihash](https://github.com/multiformats/php-multihash)| @Fil | |
+| [ruby-multihash](https://github.com/multiformats/ruby-multihash)| @kyledrake | |
 | [rust-multihash](https://github.com/multiformats/rust-multihash)| @dignifiedquire | |
 | [scala-multihash](https://github.com/multiformats/scala-multihash)| @parkan | |
 | [SwiftMultihash](https://github.com/multiformats/SwiftMultihash)| @NeoTeo | |
