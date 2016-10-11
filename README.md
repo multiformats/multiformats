@@ -88,6 +88,7 @@ As well as specifications, we also have some implementations in the organization
 |------|-------------------|
 | [go-multiaddr](https://github.com/multiformats/go-multiaddr)| @whyrusleeping |
 | [go-multiaddr-net](https://github.com/multiformats/go-multiaddr-net)| @whyrusleeping |
+| [java-multiaddr](https://github.com/multiformats/java-multiaddr)| @ianopolous |
 | [js-multiaddr](https://github.com/multiformats/js-multiaddr)| @diasdavid |
 | [rust-multiaddr](https://github.com/multiformats/rust-multiaddr)| @dignifiedquire |
 | [SwiftMultiaddr](https://github.com/multiformats/SwiftMultiaddr)| @NeoTeo |
@@ -99,9 +100,11 @@ As well as specifications, we also have some implementations in the organization
 | [c-multihash](https://github.com/multiformats/c-multihash) | @Kubuxu | _Only parsing and encoding, and not hashing._ |
 | [ex_multihash](https://github.com/multiformats/ex_multihash)| @zabirauf | |
 | [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu | |
+| [java-multihash](https://github.com/multiformats/java-multihash) | @ianopolous | |
 | [js-multihash](https://github.com/multiformats/js-multihash)| @diasdavid | |
 | [js-multihashing](https://github.com/multiformats/js-multihashing)| @diasdavid | |
 | [php-multihash](https://github.com/multiformats/php-multihash)| @Fil | |
+| [ruby-multihash](https://github.com/multiformats/ruby-multihash)| @kyledrake | |
 | [rust-multihash](https://github.com/multiformats/rust-multihash)| @dignifiedquire | |
 | [scala-multihash](https://github.com/multiformats/scala-multihash)| @parkan | |
 | [SwiftMultihash](https://github.com/multiformats/SwiftMultihash)| @NeoTeo | |
@@ -123,6 +126,7 @@ As well as specifications, we also have some implementations in the organization
 | [multiformats](https://github.com/multiformats/multiformats)| @RichardLitt | This repository |
 | [specs](https://github.com/multiformats/specs)| @nicola | Specification work regarding multihash, multiaddr, and others. _WIP._ |
 | [unsigned-varint](https://github.com/multiformats/unsigned-varint) | @jbenet | unsigned varint in use in multiformat specs. _WIP._ |
+| [clj-varint](https://github.com/multiformats/clj-varint) | @ekroon | Simple wrapper around Bazel VarInt code.
 
 ## Contribute
 
