@@ -99,6 +99,7 @@ As well as specifications, we also have some implementations in the organization
 |------|---------|------|
 | [c-multihash](https://github.com/multiformats/c-multihash) | @Kubuxu | _Only parsing and encoding, and not hashing._ |
 | [c-multihashing](https://github.com/multiformats/c-multihashing) | @Kubuxu | |
+| [cs-multihash](https://github.com/multiformats/cs-multihash) | @tabrath | |
 | [clj-multihash](https://github.com/multiformats/clj-multihash) | @greglook | |
 | [ex_multihash](https://github.com/multiformats/ex_multihash)| @zabirauf | |
 | [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu | |
