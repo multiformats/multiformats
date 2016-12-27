@@ -1,8 +1,9 @@
 # multiformats
 
 [![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
-[![](https://img.shields.io/badge/project-multiformats-blue.svg?style=flat-square)](http://github.com/multiformats/multiformats)
-[![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
+[![](https://img.shields.io/badge/project-multiformats-blue.svg?style=flat-square)](https://github.com/multiformats/multiformats)
+[![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](https://webchat.freenode.net/?channels=%23ipfs)
+[![](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 > The main repository for discussing multiformats
 
@@ -61,12 +62,6 @@ The self-describing aspects of the protocols have a few stipulations:
 Several of the multiformats are stable, and we're working on the others. We are trying to prioritize their usage as soon as possible. What they offer -- protocol interoperability and future-proofing --  would have real-world consequences.
 
 Towards that end, we are encouraging implementations of these protocols; if you know of any, please link them here (or add them to the organization!).
-
-### An Example: Multihash
-
-Multihash is a simple, easy to understand multiformat that shows how the multiformats can be used. Let's take a look at some standard hash functions:
-
-TODO @RichardLitt fill out.
 
 ### A note on the word Multiformats
 
@@ -146,16 +141,21 @@ As well as specifications, we also have some implementations in the organization
 | [unsigned-varint](https://github.com/multiformats/unsigned-varint) | @jbenet | unsigned varint in use in multiformat specs. _WIP._ |
 | [clj-varint](https://github.com/multiformats/clj-varint) | @ekroon | Simple wrapper around Bazel VarInt code.
 
+## Maintainers
+
+- [@RichardLitt](https://github.com/RichardLitt) (administrator)
+
 ## Contribute
 
 Please contribute! [Dive into the issues](https://github.com/multiformats/multiformats/issues)!
 
 Check out our [contributing document](contributing.md) for more information on how we work, and about contributing in general. Please be aware that all interactions related to multiformats are subject to the IPFS [Code of Conduct](https://github.com/ipfs/community/blob/master/code-of-conduct.md).
 
-If you're interested in proposing a new format (in addition to multihash, multistream, and so on), [open an issue](https://github.com/multiformats/multiformats/issue/new) in this repository, explaining the name of the format, what it is for, and why you think it should become one of the multiformats. Pointing to any existing implementations would also be great, if there are any. If you want to implement a multiformat in a new language, open an issue in the main repository for the relevant multiformat: for instance, if you want to write rust-multicodec, open an issue in the multiformats/multicodec repository. This will allow others to know that you're working on it, and potentially join in the effort.
+If you're interested in proposing a new format (in addition to multihash, multistream, and so on), [open an issue](https://github.com/multiformats/multiformats/issues/new) in this repository, explaining the name of the format, what it is for, and why you think it should become one of the multiformats. Pointing to any existing implementations would also be great, if there are any. If you want to implement a multiformat in a new language, open an issue in the main repository for the relevant multiformat: for instance, if you want to write rust-multicodec, open an issue in the multiformats/multicodec repository. This will allow others to know that you're working on it, and potentially join in the effort.
 
 Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## License
 
-This repository is mainly documents. All of these are licensed under the [CC-BY-SA 3.0](https://ipfs.io/ipfs/QmVreNvKsQmQZ83T86cWSjPu2vR3yZHGPm5jnxFuunEB9u) license, copyright Protocol Labs Inc.
+This repository is only for documents. All of these are licensed under the [CC-BY-SA 3.0](https://ipfs.io/ipfs/QmVreNvKsQmQZ83T86cWSjPu2vR3yZHGPm5jnxFuunEB9u) license © 2016 Protocol Labs Inc. Any code is under a [MIT](LICENSE) © 2016 Protocol Labs Inc.
+
