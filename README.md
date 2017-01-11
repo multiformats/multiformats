@@ -81,6 +81,7 @@ As well as specifications, we also have some implementations in the organization
 
 | Repo | Captain |
 |------|-------------------|
+| [cs-multiaddress](https://github.com/multiformats/cs-multiaddress) | @tabrath |
 | [go-multiaddr](https://github.com/multiformats/go-multiaddr)| @whyrusleeping |
 | [go-multiaddr-net](https://github.com/multiformats/go-multiaddr-net)| @whyrusleeping |
 | [java-multiaddr](https://github.com/multiformats/java-multiaddr)| @ianopolous |
@@ -123,6 +124,7 @@ As well as specifications, we also have some implementations in the organization
 
 | Repo | Captain | Note |
 |------|---------|------|
+| [cs-multibase](https://github.com/multiformats/cs-multibase) | @tabrath | |
 | [go-multibase](https://github.com/multiformats/go-multibase) | @whyrusleeping | |
 | [go-multigram](https://github.com/multiformats/go-multigram)| @lgierth | |
 | [go-multistream](https://github.com/multiformats/go-multistream)| @whyrusleeping | |
