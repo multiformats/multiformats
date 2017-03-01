@@ -101,6 +101,7 @@ As well as specifications, we also have some implementations in the organization
 | [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu | |
 | [haskell-multihash](https://github.com/multiformats/haskell-multihash) | @LukeHoersten | |
 | [java-multihash](https://github.com/multiformats/java-multihash) | @ianopolous | |
+| [hash-overlay (Java 9)](https://github.com/comodal/hash-overlay) | @jamespedwards42 | |
 | [js-multihash](https://github.com/multiformats/js-multihash)| @diasdavid | |
 | [js-multihashing-async](https://github.com/multiformats/js-multihashing-async) | @dignifiedquire | |
 | [js-multihashing](https://github.com/multiformats/js-multihashing)| @diasdavid | |
