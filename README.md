@@ -14,8 +14,8 @@ Currently, we have the following multiformat protocols:
 | [multiaddr](https://github.com/multiformats/multiaddr)| @jbenet | stable |
 | [multicodec](https://github.com/multiformats/multicodec)| @jbenet | stable |
 | [multihash](https://github.com/multiformats/multihash)| @jbenet | stable |
-| [multistream](https://github.com/multiformats/multistream)| @diasdavid | WIP |
 | [multibase](https://github.com/multiformats/multibase) | @jbenet | WIP |
+| [multistream](https://github.com/multiformats/multistream)| @diasdavid | stable |
 | [multigram](https://github.com/ipfs/specs/pull/123) | | WIP |
 | [multikey](https://github.com/ipfs/specs/issues/58) | | WIP |
 
@@ -49,9 +49,11 @@ Multiformats is a collection of protocols which aim to future-proof systems, tod
 - [multiaddr](https://github.com/multiformats/multiaddr): network addresses
 - [multibase](https://github.com/multiformats/multibase): base encodings
 - [multicodec](https://github.com/multiformats/multicodec): serialization codes
+- [multigram](https://github.com/multiformats/multigram): protocol negotiation and multiplexing over datagrams
 - [multihash](https://github.com/multiformats/multihash): cryptographic hashes
 - [multikey](https://github.com/ipfs/specs/issues/58): cryptographic keys and artifacts
 - [multistream](https://github.com/multiformats/multistream): stream wire protocols
+- [multistream-select](https://github.com/multiformats/multistream-select): Friendly protocol multiplexing.
 
 The self-describing aspects of the protocols have a few stipulations:
 
@@ -129,9 +131,9 @@ As well as specifications, we also have some implementations in the organization
 | [go-multibase](https://github.com/multiformats/go-multibase) | @whyrusleeping | |
 | [go-multigram](https://github.com/multiformats/go-multigram)| @lgierth | |
 | [go-multistream](https://github.com/multiformats/go-multistream)| @whyrusleeping | |
+| [java-multibase](https://github.com/multiformats/java-multibase) | @ianopolous | |
 | [js-multibase](https://github.com/multiformats/js-multibase) | @diasdavid | |
 | [js-multistream-select](https://github.com/multiformats/js-multistream-select) | @diasdavid | |
-| [js-multistream](https://github.com/multiformats/js-multistream-select)| @diasdavid | |
 
 ### Other Repositories
 
@@ -143,6 +145,7 @@ As well as specifications, we also have some implementations in the organization
 | [specs](https://github.com/multiformats/specs)| @nicola | Specification work regarding multihash, multiaddr, and others. _WIP._ |
 | [unsigned-varint](https://github.com/multiformats/unsigned-varint) | @jbenet | unsigned varint in use in multiformat specs. _WIP._ |
 | [clj-varint](https://github.com/multiformats/clj-varint) | @ekroon | Simple wrapper around Bazel VarInt code.
+| [website](https://github.com/multiformats/website) | @victorbjelkholm | The multiformats website |
 
 ## Maintainers
 
