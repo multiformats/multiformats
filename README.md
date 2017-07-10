@@ -13,9 +13,9 @@ Currently, we have the following multiformat protocols:
 | [multiaddr](https://github.com/multiformats/multiaddr)| @jbenet | stable |
 | [multicodec](https://github.com/multiformats/multicodec)| @jbenet | stable |
 | [multihash](https://github.com/multiformats/multihash)| @jbenet | stable |
-| [multistream](https://github.com/multiformats/multistream)| @diasdavid | WIP |
 | [multibase](https://github.com/multiformats/multibase) | @jbenet | WIP |
-| [multigram](Protocol negotiation and multiplexing over datagrams) | | WIP |
+| [multistream](https://github.com/multiformats/multistream)| @diasdavid | stable |
+| [multigram](https://github.com/ipfs/specs/pull/123) | | WIP |
 | [multikey](https://github.com/ipfs/specs/issues/58) | | WIP |
 
 See the project directory, below, for implementations and other related repositories.
