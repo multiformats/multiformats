@@ -146,7 +146,7 @@ As well as specifications, we also have some implementations in the organization
 
 ## Maintainers
 
-- [@RichardLitt](https://github.com/RichardLitt) (administrator)
+- [@daviddias](https://github.com/daviddias)
 
 ## Contribute
 
