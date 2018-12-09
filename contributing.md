@@ -86,4 +86,4 @@ We do not have an email listserv; all of our conversation is in GitHub. If you w
 
 ### Helping in other ways
 
-Protocol Labs occasionally is able to hire developers for part time or full time positions, to work on Multiformats. If you are interested, check out [the job listings](http://ipn.io/join/#pm). If you'd like to help in other ways, [email @jbenet directly](mailto:juan@ipfs.io?subject=Contributing to Multiformats).
+Protocol Labs occasionally is able to hire developers for part time or full time positions, to work on Multiformats. If you are interested, check out [the job listings](http://ipn.io/join/#pm). If you'd like to help in other ways, [email @jbenet directly](mailto:juan@ipfs.io?subject=Contributing%20to%20Multiformats).
