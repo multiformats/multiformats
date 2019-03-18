@@ -7,17 +7,17 @@
 
 > The main repository for discussing multiformats
 
-Currently, we have the following multiformat protocols:
+Currently, we have the following formats. More formats are being discussed and worked on.
 
-| Repo | Captain | Status |
-|------|---------|--------|
-| [multiaddr](https://github.com/multiformats/multiaddr)| @jbenet | stable |
-| [multicodec](https://github.com/multiformats/multicodec)| @jbenet | stable |
-| [multihash](https://github.com/multiformats/multihash)| @jbenet | stable |
-| [multibase](https://github.com/multiformats/multibase) | @jbenet | WIP |
-| [multistream](https://github.com/multiformats/multistream)| @diasdavid | stable |
-| [multigram](https://github.com/ipfs/specs/pull/123) | | WIP |
-| [multikey](https://github.com/ipfs/specs/issues/58) | | WIP |
+| Repo | Captain | Status | IETF |
+|------|---------|--------|------|
+| [multiaddr](https://github.com/multiformats/multiaddr)| @lgierth | stable | [WIP](https://github.com/multiformats/multiaddr/tree/doc/internet-draft) |
+| [multibase](https://github.com/multiformats/multibase) | @jbenet | stable | [W3C DVCG](https://github.com/w3c-dvcg/multibase) |
+| [multicodec](https://github.com/multiformats/multicodec)| @jbenet | stable | TODO |
+| [multihash](https://github.com/multiformats/multihash)| @jbenet | stable | [W3C DVCG](https://github.com/w3c-dvcg/multihash) |
+| [multistream](https://github.com/multiformats/multistream)| @diasdavid | stable | TODO |
+| [multigram](https://github.com/ipfs/specs/pull/123) | | WIP | TODO |
+| [multikey](https://github.com/ipfs/specs/issues/58) | | WIP | TODO |
 
 See the project directory, below, for implementations and other related repositories.
 
@@ -86,10 +86,12 @@ As well as specifications, we also have some implementations in the organization
 | [cs-multiaddress](https://github.com/multiformats/cs-multiaddress) | @tabrath |
 | [go-multiaddr](https://github.com/multiformats/go-multiaddr)| @whyrusleeping |
 | [go-multiaddr-net](https://github.com/multiformats/go-multiaddr-net)| @whyrusleeping |
+| [go-multiaddr-dns](https://github.com/multiformats/go-multiaddr-dns)| @lgierth |
 | [java-multiaddr](https://github.com/multiformats/java-multiaddr)| @ianopolous |
 | [js-multiaddr](https://github.com/multiformats/js-multiaddr)| @diasdavid |
 | [rust-multiaddr](https://github.com/multiformats/rust-multiaddr)| @dignifiedquire |
 | [SwiftMultiaddr](https://github.com/multiformats/SwiftMultiaddr)| @NeoTeo |
+| [py-multiaddr](https://github.com/multiformats/py-multiaddr) |  |
 
 #### Multihash Implementations
 
