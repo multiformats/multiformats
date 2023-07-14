@@ -47,6 +47,7 @@ registries that support them.
     - [Multiformats Protocol Specifications](#multiformats-protocol-specifications)
     - [Multiformats Protocol Refinements](#multiformats-protocol-refinements)
     - [Multiformats Registries](#multiformats-registries)
+    - [Multiformats Registrations](#multiformats-registrations)
   - [Acknowledgements](#acknowledgements)
 
 ## Introduction
@@ -175,19 +176,20 @@ single-byte range), congested (if commonly-used encodings require abnormally
 long flags), or "squatted" (i.e. reserved too early without proven adoption and
 utility).
 
+Essentially, registrations and re-registrations proceed through the following steps-- if all requirements are already met at time of initial registration, these can be collapsed.  Essentially, they are:
+- "Reserved" entries can be inserted directly by protocol designers or Stewards to prevent interoperability or functional pitfalls
+- "Reserved" entries can also be submitted on an [Experimental Use](https://www.rfc-editor.org/rfc/rfc8126.html#section-4.2) basis. Registrations at this level are essentially courtesies to other registrants and invitations to collaborate or provide feedback. These can be deprecated in favor of competing "Draft" or "Final" proposals for the same unique entry code.
+- "Draft" entries can be submitted by mature projects that can reasonably document the requirements below and pass [Expert Review](https://www.rfc-editor.org/rfc/rfc8126.html#section-4.5)
+- "Final" entries must document the complete requirements below and pass review on a [Specification Required](https://www.rfc-editor.org/rfc/rfc8126.html#section-4.6) basis.
+
+### Multiformats Registrations
+
 In order to ensure that our registries are as extensible as they need to be but
-do not suffer from over-use, we have a set of criteria which is used to ensure
+do not suffer from over-use, we have a set of criteria which are used to ensure
 that only encodings that broadly benefit the community are registered.
 
-In order to be accepted for registration, an encoding MUST:
+In order to be accepted for registration as draft, an encoding MUST:
 
-* Produce a specification indicating how to process it at a level of detail that
-  makes independent interoperable implementations possible. (References to an
-  external specification is acceptable if it comes from a body with sufficient
-  durability guarantees.)
-* Provide a comprehensive test suite sufficient to support independent
-  interoperable implementations, or at least be comprised entirely of
-  technologies that are already mature and have test suites.
 * Volunteer at least one person who will be available to answer questions and
   address issues through the registration period and for some time after the
   encoding is accepted. 
@@ -198,6 +200,16 @@ In order to be accepted for registration, an encoding MUST:
 * Provide evidence that the encoding is supported in at least two production
   implementations.
 * Describe a convincing use case for the deployment of this specific encoding.
+* Produce a specification indicating how to process it at a level of detail that
+  makes implementations testable. (References to an external specification is
+  acceptable if it comes from a body with sufficient durability guarantees.)
+
+And, for that registration to proceed to `final` designation, it must also
+* Provide a comprehensive test suite sufficient to support independent
+  interoperable implementations, or at least be comprised entirely of
+  technologies that are already mature and have test suites.
+* Produce a specification indicating how to process it at a level of detail that
+  makes multiple independent implementations demonstrably interoperable.
 
 If an encoding seems plausible but does not yet fulfil all requirements, it can
 be registered with a `draft` status.  In exceptional cases, consensus of the
