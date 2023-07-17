@@ -2,7 +2,8 @@ name: "Propose New Multi- Project"
 description: Express interest in possible new multiformats project
 title: "📚 [NEW PROJECT] - <title>"
 labels: [
-  "ideation", "design"
+  "ideation"
+  "design"
 ]
 body:
   - type: input

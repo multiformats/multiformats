@@ -2,7 +2,9 @@ name: "Translation Announcement"
 description: Announcement of intent to translate
 title: "📚 [TRANSLATION/LOCALIZATION] - <title>"
 labels: [
-  "translation", "localization", "community"
+  "translation" 
+  "localization"
+  "community"
 ]
 body:
   - type: textarea
