@@ -17,7 +17,7 @@ body:
     attributes:
       label: "Have read contributing"
       description: I have read the [contributing](./contributing.md) document
-    options:
+      options:
       - label: I read it!
     validations:
       required: true
