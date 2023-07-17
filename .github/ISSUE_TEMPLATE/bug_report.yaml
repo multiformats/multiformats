@@ -1,0 +1,31 @@
+name: "Bug Report - documentation or registries"
+description: Report possible bugs in multiformats spec, process docs, and/or the mf-wide registry.
+title: "🐛 [DOC/PROCESS BUG] - <title>"
+labels: [
+  "bug"
+]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter an explicit description of your issue,  
+      placeholder: Short and explicit description of your incident, ideally with commit-specific link to lines
+    validations:
+      required: true
+  - type: input
+    id: reprod-url
+    attributes:
+      label: "Reproduction URL"
+      description: Please enter your GitHub URL to provide a reproduction of the issue
+      placeholder: ex. https://github.com/multiformats/multiformats/
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context"
+      description: Please provide additional context
+      placeholder: "Context or external links needed to explain the possible mistake"       
+    validations:
+      required: true

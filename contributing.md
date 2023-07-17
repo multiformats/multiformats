@@ -138,6 +138,14 @@ execution exploit – please disclose it responsibly and send your report
 privately to [security@ipfs.io](mailto:security@ipfs.io), please **DO NOT** file
 a public issue.
 
+We have issue templates for the following types of issue:
+- request clarity on (or report possible bug in) documentation (here and per-project)
+- volunteer to translate docs or install instructions (per-project)
+- bug report (per-project and per-installation)
+- registration: `reserved` (per-project)
+- registration: `draft` (per-project)
+- registration: update `reserved` or `draft` to `final` (per-project)
+
 ### Multiformats Protocol Specifications
 
 The process to make changes to multiformats specifications is to file an issue or
