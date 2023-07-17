@@ -2,8 +2,6 @@ name: "Translation Announcement"
 description: Announcement of intent to translate
 title: "📚 [TRANSLATION/LOCALIZATION] - <title>"
 labels: [
-  "translation" 
-  "localization"
   "community"
 ]
 body:

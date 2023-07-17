@@ -3,7 +3,6 @@ description: Express interest in possible new multiformats project
 title: "📚 [NEW PROJECT] - <title>"
 labels: [
   "ideation"
-  "design"
 ]
 body:
   - type: input
