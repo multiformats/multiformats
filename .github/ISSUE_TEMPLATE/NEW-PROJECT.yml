@@ -13,14 +13,13 @@ body:
       placeholder: Multi-thingy for now
     validations:
       required: false
-  - type: checkbox
-    id: have_read
+  - type: checkboxes
     attributes:
-      label: "Have read"
+      label: "Have read contributing"
       description: I have read the [contributing](./contributing.md) document
-      default: false
-    validations:
-      required: true
+    options:
+      - label: I read it!
+        required: true
   - type: textarea
     id: problem_statement
     attributes:
@@ -45,14 +44,13 @@ body:
       placeholder: Detail welcome
     validations:
       required: true
-  - type: checkbox
-    id: have_checked_table
+  - type: checkboxes
     attributes:
       label: "Have checked table"
       description: I have reviewed the [multiformats mega-table](https://github.com/multiformats/multicodec/blob/master/table.csv) to assess viable sub-namespace for a registry if applicable
-      default: false
-    validations:
-      required: true
+    options:
+      - label: I read it!
+        required: true
   - type: textarea
       id: registry_design
       attributes:

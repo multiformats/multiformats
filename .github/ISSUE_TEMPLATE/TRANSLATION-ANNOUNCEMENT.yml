@@ -19,3 +19,10 @@ body:
       label: "Want help?"
       description: Check this box if you'd like potential helpers tagged into the thread for review.
       default: true
+  - type: checkboxes
+    attributes:
+      label: "Want help"
+      description: Check this box if you'd like potential helpers tagged into the thread for review.
+    options:
+      - label: Would collaborate!
+      - default: true
