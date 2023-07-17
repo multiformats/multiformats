@@ -19,4 +19,3 @@ body:
       description: Check this box if you'd like potential helpers tagged into the thread for review.
       options:
       - label: Would collaborate!
-      - default: true

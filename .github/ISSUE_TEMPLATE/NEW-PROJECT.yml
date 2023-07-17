@@ -19,7 +19,8 @@ body:
       description: I have read the [contributing](./contributing.md) document
     options:
       - label: I read it!
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: problem_statement
     attributes:
@@ -50,8 +51,6 @@ body:
       description: I have reviewed the [multiformats mega-table](https://github.com/multiformats/multicodec/blob/master/table.csv) to assess viable sub-namespace for a registry if applicable
       options:
       - label: I read it!
-    validations:
-      required: true
   - type: textarea
     id: registry_design
     attributes:
