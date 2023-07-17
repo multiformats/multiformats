@@ -140,6 +140,7 @@ a public issue.
 
 We have issue templates for the following types of issue:
 - request clarity on (or report possible bug in) documentation (here and per-project)
+- propose a new multi- project (here)
 - volunteer to translate docs or install instructions (per-project)
 - bug report (per-project and per-installation)
 - registration: `reserved` (per-project)
