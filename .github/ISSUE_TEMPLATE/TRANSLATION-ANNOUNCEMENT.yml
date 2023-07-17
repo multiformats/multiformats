@@ -13,16 +13,10 @@ body:
       placeholder: ISO codes always nice but not required!
     validations:
       required: true
-  - type: checkbox
-    id: want_help
-    attributes:
-      label: "Want help?"
-      description: Check this box if you'd like potential helpers tagged into the thread for review.
-      default: true
   - type: checkboxes
     attributes:
       label: "Want help"
       description: Check this box if you'd like potential helpers tagged into the thread for review.
-    options:
+      options:
       - label: Would collaborate!
       - default: true

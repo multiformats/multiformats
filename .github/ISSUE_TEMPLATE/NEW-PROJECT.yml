@@ -48,14 +48,15 @@ body:
     attributes:
       label: "Have checked table"
       description: I have reviewed the [multiformats mega-table](https://github.com/multiformats/multicodec/blob/master/table.csv) to assess viable sub-namespace for a registry if applicable
-    options:
+      options:
       - label: I read it!
-        required: true
+    validations:
+      required: true
   - type: textarea
-      id: registry_design
-      attributes:
-        label: "Proposed sub-namespace"
-        description: Please describe the range of entries your project would need and any considerations about the greater multiformats namespace
-        placeholder: Registration space need not be contiguous and one entry in the macro-registry can be annotated differently in multiple sub-registries
-      validations:
-        required: true
+    id: registry_design
+    attributes:
+      label: "Proposed sub-namespace"
+      description: Please describe the range of entries your project would need and any considerations about the greater multiformats namespace
+      placeholder: Registration space need not be contiguous and one entry in the macro-registry can be annotated differently in multiple sub-registries
+    validations:
+      required: true
