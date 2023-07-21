@@ -104,7 +104,7 @@ over time.
 
 If you want to implement a multiformat in a new language, open an issue in the
 main repository for the relevant multiformat: for instance, if you want to write
-`rust-multicodec`, then open an issue in the multiformats/multicodec repository.
+`rust-multicodec`, then [open an issue](https://github.com/multiformats/multicodec/issues/new) in the `multiformats/multicodec` repository.
 This will allow others to know that you're working on it, and potentially join
 in the effort.
 
