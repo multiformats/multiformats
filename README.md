@@ -80,7 +80,7 @@ cover the following areas:
 
 Several of the multiformats are stable, and work on the others is ongoing.
 Implementers and refiners of the drafts of any one of these registries or their
-tooling are welcome to [contribute][./contributing.md], without needing to
+tooling are welcome to [contribute](./contributing.md), without needing to
 understand deeply or track progress on the others. Across these otherwise quite
 different use-cases and mechanisms, the self-describing aspects of the protocols
 have a few stipulations in common:
