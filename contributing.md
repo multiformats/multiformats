@@ -30,7 +30,7 @@ reviewers:
 The values in multiformats are investments of finite namespace towards
 broadly-useful utilities, and many of the current entries are already
 foundational low-level building blocks for both data and network layers and are
-used in IPFS, IPLD, libp2p, and beyond. As a result, it is particularly
+used in [IPFS](https://ipfs.tech), [IPLD](https://ipld.io), [libp2p](https://libp2p.io/), and beyond. As a result, it is particularly
 important that these values be managed in such a way that guarantees that they
 are maximally reliable, interoperable, useful, and safe. This document captures
 the process that is used to manage the multiformats specifications and the
