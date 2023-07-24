@@ -92,7 +92,7 @@ IPFS [Code of Conduct][]; some of this work may move to standards bodies in the
 future and be bound as well by the relevant codes of conduct there.
 
 If you're interested in proposing a new format (in addition to multihash,
-multistream, and so on), [open an
+multibase, and so on), [open an
 issue](https://github.com/multiformats/multiformats/issues/new) in this
 repository, explaining the name of the format, what it is for, and why you think
 it should become one ~~of~~ the multiformats. Pointing to any existing
