@@ -1,5 +1,5 @@
 name: "Bug Report - documentation or registries"
-description: Report possible bugs in multiformats spec, process docs, and/or the mf-wide registry.
+description: Report possible bugs in multiformats spec, process docs, and/or the multiformats-wide registry.
 title: "🐛 [DOC/PROCESS BUG] - <title>"
 labels: [
   "bug"
