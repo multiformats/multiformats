@@ -95,7 +95,7 @@ If you're interested in proposing a new format (in addition to multihash,
 multibase, and so on), [open an
 issue](https://github.com/multiformats/multiformats/issues/new) in this
 repository, explaining the name of the format, what it is for, and why you think
-it should become one ~~of~~ the multiformats. Pointing to any existing
+it should become one *of* the multiformats. Pointing to any existing
 implementations would also be great, if there are any. Here, taking a glance at
 the Registry  Governance sections of the [contributing
 document](contributing.md) may help you contextualize the limits of sharing a
