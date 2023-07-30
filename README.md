@@ -92,6 +92,7 @@ As well as specifications, we also have some implementations in the organization
 | [rust-multiaddr](https://github.com/multiformats/rust-multiaddr)| @dignifiedquire |
 | [SwiftMultiaddr](https://github.com/multiformats/SwiftMultiaddr)| @NeoTeo |
 | [py-multiaddr](https://github.com/multiformats/py-multiaddr) |  |
+| [multiformat](https://github.com/erwin-kok/multiformat) | @erwin-kok |
 
 #### Multihash Implementations
 
@@ -115,6 +116,7 @@ As well as specifications, we also have some implementations in the organization
 | [rust-multihash](https://github.com/multiformats/rust-multihash)| @dignifiedquire | |
 | [scala-multihash](https://github.com/multiformats/scala-multihash)| @parkan | |
 | [SwiftMultihash](https://github.com/multiformats/SwiftMultihash)| @NeoTeo | |
+| [multiformat](https://github.com/erwin-kok/multiformat) | @erwin-kok |
 
 #### Multicodec Implementations
 
@@ -124,6 +126,7 @@ As well as specifications, we also have some implementations in the organization
 | [go-multicodec-packed](https://github.com/multiformats/go-multicodec-packed) | @whyrusleeping | |
 | [go-multicodec](https://github.com/multiformats/go-multicodec)| @jbenet | |
 | [js-multicodec](https://github.com/multiformats/js-multicodec) | @diasdavid | |
+| [multiformat](https://github.com/erwin-kok/multiformat) | @erwin-kok |
 
 #### Other Implementations
 
@@ -136,6 +139,7 @@ As well as specifications, we also have some implementations in the organization
 | [java-multibase](https://github.com/multiformats/java-multibase) | @ianopolous | |
 | [js-multibase](https://github.com/multiformats/js-multibase) | @diasdavid | |
 | [js-multistream-select](https://github.com/multiformats/js-multistream-select) | @diasdavid | |
+| [multiformat](https://github.com/erwin-kok/multiformat) | @erwin-kok |
 
 ### Other Repositories
 
