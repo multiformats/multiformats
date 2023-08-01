@@ -91,66 +91,7 @@ If any of the specifications defining these formats are formalized and finalized
 
 ### Implementations
 
-As well as specifications, we also have some implementations checked into and maintained through the GitHub organization.
-Checking in implementation code here is not a requirement of listing here, unless maintainership is being transferred.
-
-#### Multiaddr Implementations
-
-| Repo | Captain |
-|------|-------------------|
-| [cs-multiaddress](https://github.com/multiformats/cs-multiaddress) | @tabrath |
-| [go-multiaddr](https://github.com/multiformats/go-multiaddr)| @whyrusleeping |
-| [go-multiaddr-net](https://github.com/multiformats/go-multiaddr-net)| @whyrusleeping |
-| [go-multiaddr-dns](https://github.com/multiformats/go-multiaddr-dns)| @lgierth |
-| [java-multiaddr](https://github.com/multiformats/java-multiaddr)| @ianopolous |
-| [js-multiaddr](https://github.com/multiformats/js-multiaddr)| @diasdavid |
-| [rust-multiaddr](https://github.com/multiformats/rust-multiaddr)| @dignifiedquire |
-| [SwiftMultiaddr](https://github.com/multiformats/SwiftMultiaddr)| @NeoTeo |
-| [py-multiaddr](https://github.com/multiformats/py-multiaddr) |  |
-
-#### Multihash Implementations
-
-| Repo | Captain | Note |
-|------|---------|------|
-| [c-multihash](https://github.com/multiformats/c-multihash) | @Kubuxu | _Only parsing and encoding, and not hashing._ |
-| [c-multihashing](https://github.com/multiformats/c-multihashing) | @Kubuxu | |
-| [cs-multihash](https://github.com/multiformats/cs-multihash) | @tabrath | |
-| [clj-multihash](https://github.com/multiformats/clj-multihash) | @greglook | |
-| [ex_multihash](https://github.com/multiformats/ex_multihash)| @zabirauf | |
-| [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu | |
-| [haskell-multihash](https://github.com/multiformats/haskell-multihash) | @LukeHoersten | |
-| [java-multihash](https://github.com/multiformats/java-multihash) | @ianopolous | |
-| [hash-overlay (Java 9)](https://github.com/comodal/hash-overlay) | @jamespedwards42 | |
-| [js-multihash](https://github.com/multiformats/js-multihash)| @diasdavid | |
-| [js-multihashing-async](https://github.com/multiformats/js-multihashing-async) | @dignifiedquire | |
-| [js-multihashing](https://github.com/multiformats/js-multihashing)| @diasdavid | |
-| [MultiHash.Net (fork)](https://github.com/multiformats/MultiHash.Net) | @MCGPPeters | |
-| [php-multihash](https://github.com/multiformats/php-multihash)| @Fil | |
-| [ruby-multihash](https://github.com/multiformats/ruby-multihash)| @kyledrake | |
-| [rust-multihash](https://github.com/multiformats/rust-multihash)| @dignifiedquire | |
-| [scala-multihash](https://github.com/multiformats/scala-multihash)| @parkan | |
-| [SwiftMultihash](https://github.com/multiformats/SwiftMultihash)| @NeoTeo | |
-
-#### Multicodec Implementations
-
-| Repo | Captain | Note |
-|------|---------|------|
-| [clj-multicodec](https://github.com/multiformats/clj-multicodec) | @greglook | |
-| [go-multicodec-packed](https://github.com/multiformats/go-multicodec-packed) | @whyrusleeping | |
-| [go-multicodec](https://github.com/multiformats/go-multicodec)| @jbenet | |
-| [js-multicodec](https://github.com/multiformats/js-multicodec) | @diasdavid | |
-
-#### Other Implementations
-
-| Repo | Captain | Note |
-|------|---------|------|
-| [cs-multibase](https://github.com/multiformats/cs-multibase) | @tabrath | |
-| [go-multibase](https://github.com/multiformats/go-multibase) | @whyrusleeping | |
-| [go-multigram](https://github.com/multiformats/go-multigram)| @lgierth | |
-| [go-multistream](https://github.com/multiformats/go-multistream)| @whyrusleeping | |
-| [java-multibase](https://github.com/multiformats/java-multibase) | @ianopolous | |
-| [js-multibase](https://github.com/multiformats/js-multibase) | @diasdavid | |
-| [js-multistream-select](https://github.com/multiformats/js-multistream-select) | @diasdavid | |
+As well as specifications, we also have some implementations checked into and maintained through the GitHub organization. Each protocol contains a list of of implementations.
 
 ### Other Repositories
 
