@@ -25,7 +25,7 @@ reviewers:
     github: vmx
 ---
 
-# Multiformats Governance Process
+# Multiformats Governance Overview
 
 Each self-describing protocol values defined by one of the multiformats specifications occupies a finite namespace of registries.
 As such, they are long-term investments towards broadly-useful utilities, and many of the current entries are already foundational low-level building blocks for both data and network layers and are used in [IPFS](https://ipfs.tech), [IPLD](https://ipld.io), [libp2p](https://libp2p.io/), and beyond. 
@@ -63,8 +63,13 @@ Additionally, if we consider the long-term durability of content that relies on 
 
 Please be aware that all interactions related to multiformats are subject to the IPFS [Code of Conduct][]; some of this work may move to standards bodies in the future and be bound as well by the relevant codes of conduct there.
 
-If you're interested in proposing a new format (in addition to multihash, multibase, and so on), [open an issue](https://github.com/multiformats/multiformats/issues/new?assignees=&labels=ideation&projects=&template=NEW-PROJECT.yml) in this repository, explaining the name of the format, what it is for, and why you think it should become one *of* the multiformats. 
-Pointing to any existing implementations would also be great, if there are any. Here, taking a glance at the Registry  Governance sections of the [contributing document](contributing.md) may help you contextualize the limits of sharing a registration namespace with all the other formats, each of which slowly grows over time.
+If you're interested in proposing and championing a new multiformat (in addition to multihash, multibase, and so on), [open an "Ideas" discussion](https://github.com/multiformats/multiformats/discussions/categories/ideas) in this repository, explaining in as much detail as you're prepared to champions:
+1. the problem it solves,
+2. the name of the format, 
+3. which current multiformats it would use (and if it would require any new registrations in those formats), 
+4. how many new registrations it would require in the multicodec table specific to your format (see the [Multiformats Registries section below](#multiformats-registries)),
+5. existing prototypes or implementations, if any, and 
+6. why you think it should become *one of* the multiformats. 
 
 If you want to implement a multiformat in a new language or in a new architecture, open an issue in the main repository for the relevant multiformat: for instance, if you want to write `rust-multibase`, then [open an issue](https://github.com/multiformats/multibase/issues/new?assignees=&labels=implementation&projects=&template=IMPLEMENTATION-ANNOUNCEMENT.yml) in the `multiformats/multibase` repository. 
 This will allow others to know that you're working on it, and potentially join in the effort.
