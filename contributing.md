@@ -21,29 +21,29 @@ editors:
 reviewers:
   - name: Rod Vagg
     github: rvagg
-  - name: Volker Mischke
+  - name: Volker Mische
     github: vmx
 ---
 
 # Multiformats Governance Process
 
-The values in multiformats are investments of finite namespace towards broadly-useful utilities, and many of the current entries are already foundational low-level building blocks for both data and network layers and are used in [IPFS](https://ipfs.tech), [IPLD](https://ipld.io), [libp2p](https://libp2p.io/), and beyond. 
+Each self-describing protocol values defined by one of the multiformats specifications occupies a finite namespace of registries.
+As such, they are long-term investments towards broadly-useful utilities, and many of the current entries are already foundational low-level building blocks for both data and network layers and are used in [IPFS](https://ipfs.tech), [IPLD](https://ipld.io), [libp2p](https://libp2p.io/), and beyond. 
 As a result, it is particularly important that these values be managed in such a way that guarantees that they are maximally reliable, interoperable, useful, and safe. 
 This document captures the process that is used to manage the multiformats specifications and the registries that support them.
 
 ## Topics
 
-- [Multiformats Governance Process](#multiformats-governance-process)
-  - [Topics](#topics)
-  - [Introduction](#introduction)
-  - [Code of Conduct and Ways to Contribute](#code-of-conduct-and-ways-to-contribute)
-  - [The Process](#the-process)
-    - [Reporting Issues](#reporting-issues)
-    - [Multiformats Protocol Specifications](#multiformats-protocol-specifications)
-    - [Multiformats Protocol Refinements](#multiformats-protocol-refinements)
-    - [Multiformats Registries](#multiformats-registries)
-    - [Multiformats Registrations](#multiformats-registrations)
-  - [Acknowledgements](#acknowledgements)
+- [Topics](#topics)
+- [Introduction](#introduction)
+- [Code of Conduct and Ways to Contribute](#code-of-conduct-and-ways-to-contribute)
+- [The Process](#the-process)
+  - [Reporting Issues](#reporting-issues)
+  - [Multiformats Protocol Specifications](#multiformats-protocol-specifications)
+  - [Multiformats Protocol Refinements](#multiformats-protocol-refinements)
+  - [Multiformats Registries](#multiformats-registries)
+  - [Multiformats Registrations](#multiformats-registrations)
+- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 

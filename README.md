@@ -17,13 +17,13 @@ See [contributing.md][./contributing.md] for more details on governance and proc
 Currently, we have the following formats, each of which corresponds to a specification and a registry. 
 More formats are being discussed and may be added over time, but the following are the mature ones to date:
 
-| Repo | Maintainer | Status | IETF |
+| Repo | Maintainer | Specification |
 |------|---------|--------|------|
-| [multiaddr](https://github.com/multiformats/multiaddr)| @lgierth | stable | [WIP](https://github.com/multiformats/multiaddr/tree/doc/internet-draft) |
-| [multibase](https://github.com/multiformats/multibase) | @jbenet | stable | [W3C CCG](https://github.com/w3c-ccg/multibase) |
-| [multicodec](https://github.com/multiformats/multicodec)| @jbenet | stable | TBD |
-| [multihash](https://github.com/multiformats/multihash)| @jbenet | stable | [W3C CCG](https://github.com/w3c-ccg/multihash) |
-| [multikey](https://github.com/ipfs/specs/issues/58) | @protocol | WIP | TBD |
+| [multiaddr](https://github.com/multiformats/multiaddr)| stable | [WIP](https://github.com/multiformats/multiaddr/tree/doc/internet-draft) |
+| [multibase](https://github.com/multiformats/multibase) | stable | [W3C CCG](https://github.com/w3c-ccg/multibase) |
+| [multicodec](https://github.com/multiformats/multicodec)| stable | TBD |
+| [multihash](https://github.com/multiformats/multihash)| stable | [W3C CCG](https://github.com/w3c-ccg/multihash) |
+
 
 See the project directory, below, for implementations and other related repositories.
 
@@ -32,21 +32,15 @@ See the project directory, below, for implementations and other related reposito
 
 ## Table of Contents
 
-- [multiformats](#multiformats)
-  - [Current Registries](#current-registries)
-  - [Table of Contents](#table-of-contents)
-  - [Background](#background)
-    - [A note on the word Multiformats](#a-note-on-the-word-multiformats)
-  - [Project Directory](#project-directory)
-    - [Implementations](#implementations)
-      - [Multiaddr Implementations](#multiaddr-implementations)
-      - [Multihash Implementations](#multihash-implementations)
-      - [Multicodec Implementations](#multicodec-implementations)
-      - [Other Implementations](#other-implementations)
-    - [Other Repositories](#other-repositories)
-  - [Maintainers](#maintainers)
-  - [Contribute](#contribute)
-  - [License](#license)
+- [Current Registries](#current-registries)
+- [Table of Contents](#table-of-contents)
+- [Background](#background)
+  - [A note on the word Multiformats](#a-note-on-the-word-multiformats)
+- [Project Directory](#project-directory)
+  - [Implementations](#implementations)
+- [Maintainers](#maintainers)
+- [Contribute](#contribute)
+- [License](#license)
 
 ## Background
 
@@ -68,7 +62,7 @@ Currently, these interlocking protocols (both works in progress and implemented)
 
 Several of the multiformats are stable, and work on the others is ongoing.
 Implementers and refiners of the drafts of any one of these registries or their tooling are welcome to [contribute](./contributing.md), without needing to understand deeply or track progress on the others. 
-Across these otherwise quite different use-cases and mechanisms, the self-describing aspects of the protocols have a few stipulations in common:
+Across these otherwise different use-cases and mechanisms, the self-describing aspects of the protocols have a few design goals in common:
 
 - the "prefixes" use to self-describe a value must be inline with the value (not passed out-of-band, in function calls, implicit choices, or documentation);
 - they must be compact and have a binary-packed representation (as opposed to a sparser encoding) or they will hinder performance;
@@ -87,86 +81,17 @@ Below, a list of all of the projects in the Multiformats organization is listed.
 **Maintainers** are the active leads for each project, even if the specification is still under construction. 
 Their responsibilities are to make sure that issues and pull requests are attended to in a timely manner, and general upkeep. 
 If you have questions about a repository, or need feedback, please contact them as appropriate. 
-If any of the specifications defining these formats are formalized and finalized in a standards body, these maintainers may continue on as Registrars of the table of entries which can keep growing after stabilizing the syntax and tooling interfaces.
+If any of the specifications defining these formats are formalized in a standards body, these maintainers may continue on as Registrars of the table of entries which can keep growing after stabilizing the syntax and tooling interfaces.
 
 ### Implementations
 
-As well as specifications, we also have some implementations checked into and maintained through the GitHub organization.
-Checking in implementation code here is not a requirement of listing here, unless maintainership is being transferred.
-
-#### Multiaddr Implementations
-
-| Repo | Captain |
-|------|-------------------|
-| [cs-multiaddress](https://github.com/multiformats/cs-multiaddress) | @tabrath |
-| [go-multiaddr](https://github.com/multiformats/go-multiaddr)| @whyrusleeping |
-| [go-multiaddr-net](https://github.com/multiformats/go-multiaddr-net)| @whyrusleeping |
-| [go-multiaddr-dns](https://github.com/multiformats/go-multiaddr-dns)| @lgierth |
-| [java-multiaddr](https://github.com/multiformats/java-multiaddr)| @ianopolous |
-| [js-multiaddr](https://github.com/multiformats/js-multiaddr)| @diasdavid |
-| [rust-multiaddr](https://github.com/multiformats/rust-multiaddr)| @dignifiedquire |
-| [SwiftMultiaddr](https://github.com/multiformats/SwiftMultiaddr)| @NeoTeo |
-| [py-multiaddr](https://github.com/multiformats/py-multiaddr) |  |
-
-#### Multihash Implementations
-
-| Repo | Captain | Note |
-|------|---------|------|
-| [c-multihash](https://github.com/multiformats/c-multihash) | @Kubuxu | _Only parsing and encoding, and not hashing._ |
-| [c-multihashing](https://github.com/multiformats/c-multihashing) | @Kubuxu | |
-| [cs-multihash](https://github.com/multiformats/cs-multihash) | @tabrath | |
-| [clj-multihash](https://github.com/multiformats/clj-multihash) | @greglook | |
-| [ex_multihash](https://github.com/multiformats/ex_multihash)| @zabirauf | |
-| [go-multihash](https://github.com/multiformats/go-multihash)| @Kubuxu | |
-| [haskell-multihash](https://github.com/multiformats/haskell-multihash) | @LukeHoersten | |
-| [java-multihash](https://github.com/multiformats/java-multihash) | @ianopolous | |
-| [hash-overlay (Java 9)](https://github.com/comodal/hash-overlay) | @jamespedwards42 | |
-| [js-multihash](https://github.com/multiformats/js-multihash)| @diasdavid | |
-| [js-multihashing-async](https://github.com/multiformats/js-multihashing-async) | @dignifiedquire | |
-| [js-multihashing](https://github.com/multiformats/js-multihashing)| @diasdavid | |
-| [MultiHash.Net (fork)](https://github.com/multiformats/MultiHash.Net) | @MCGPPeters | |
-| [php-multihash](https://github.com/multiformats/php-multihash)| @Fil | |
-| [ruby-multihash](https://github.com/multiformats/ruby-multihash)| @kyledrake | |
-| [rust-multihash](https://github.com/multiformats/rust-multihash)| @dignifiedquire | |
-| [scala-multihash](https://github.com/multiformats/scala-multihash)| @parkan | |
-| [SwiftMultihash](https://github.com/multiformats/SwiftMultihash)| @NeoTeo | |
-
-#### Multicodec Implementations
-
-| Repo | Captain | Note |
-|------|---------|------|
-| [clj-multicodec](https://github.com/multiformats/clj-multicodec) | @greglook | |
-| [go-multicodec-packed](https://github.com/multiformats/go-multicodec-packed) | @whyrusleeping | |
-| [go-multicodec](https://github.com/multiformats/go-multicodec)| @jbenet | |
-| [js-multicodec](https://github.com/multiformats/js-multicodec) | @diasdavid | |
-
-#### Other Implementations
-
-| Repo | Captain | Note |
-|------|---------|------|
-| [cs-multibase](https://github.com/multiformats/cs-multibase) | @tabrath | |
-| [go-multibase](https://github.com/multiformats/go-multibase) | @whyrusleeping | |
-| [go-multigram](https://github.com/multiformats/go-multigram)| @lgierth | |
-| [go-multistream](https://github.com/multiformats/go-multistream)| @whyrusleeping | |
-| [java-multibase](https://github.com/multiformats/java-multibase) | @ianopolous | |
-| [js-multibase](https://github.com/multiformats/js-multibase) | @diasdavid | |
-| [js-multistream-select](https://github.com/multiformats/js-multistream-select) | @diasdavid | |
-
-### Other Repositories
-
-| Repo | Captain | Note |
-|------|---------|------|
-| [clj-varint](https://github.com/multiformats/clj-varint) | @ekroon | |
-| [ma-pipe](https://github.com/multiformats/ma-pipe) | @jbenet | |
-| [multiformats](https://github.com/multiformats/multiformats)| @RichardLitt | This repository |
-| [specs](https://github.com/multiformats/specs)| @nicola | Specification work regarding multihash, multiaddr, and others. _WIP._ |
-| [unsigned-varint](https://github.com/multiformats/unsigned-varint) | @jbenet | unsigned varint in use in multiformat specs. _WIP._ |
-| [clj-varint](https://github.com/multiformats/clj-varint) | @ekroon | Simple wrapper around Bazel VarInt code.
-| [website](https://github.com/multiformats/website) | @victorbjelkholm | The multiformats website |
+There are no official or maintained implementations of the entire set of multiformats specifications and registries.
+The readme file of each multiformat specification repository includes a list of known implementations, some of which are hosted in this GitHub organization.
 
 ## Maintainers
 
-- [@daviddias](https://github.com/daviddias)
+Maintainers of the each multiformats specification are listed in the appropriate repositories. 
+The external standardization of multiformats specifications and registries is currently managed and coordinated by [@bumblefudge](https://github.com/bumblefudge) of [learningProof UG](https://learningproof.xyz).
 
 ## Contribute
 

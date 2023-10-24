@@ -2,4 +2,4 @@ blank_issues_enabled: true
 contact_links:
   - name: Protocol Labs Vulnerability Disclosure Team
     url: mailto:security@ipfs.io
-    about: Please do NOT open issues related to security of implementations or spec here without contacting the IPFS security team first.
+    about: Please do NOT open issues related to security of implementations or spec here without contacting the IPFS security team first. Issues specific to one or more multiformats should be opened in the respective specification repositories; this issue tracker is focused on the standardization and coordination of the various multiformats specifications in this organization.
