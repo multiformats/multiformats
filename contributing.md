@@ -51,11 +51,11 @@ The expectation is that once a format specification and a critical mass of entri
 This goes even more so once stable specifications are submitted for standardization in standards bodies, at which point registrations and changes of status to registrations will be the vast majority of changes accepted. 
 
 At all three stages in their lifecycle, however, the process is relatively lightweight and based on pull request review (if accepted to a standardization body, horizontal review may be solicited over email lists or communications channels between opening an issue and closing the pull request). 
-All decisions are eventually made by the [Specs Stewards](https://github.com/orgs/ipfs/teams/specs-stewards/members), which correspond to the IETF concept of "Registrars" triaging and guiding issues through the process, on the basis of recommendations from the coordinators of each multiformats project, which are the primary Experts in the IETF/IANA taxonomy defined in [RFC8126][].
+All decisions are eventually made by the [Specs Stewards](https://github.com/orgs/ipfs/teams/specs-stewards/members), which correspond to the IETF concept of "Registrars" triaging and guiding issues through the process, on the basis of recommendations from the coordinators of each multiformats project, which are the primary Experts in the IETF/IANA taxonomy defined in [RFC8126][https://www.rfc-editor.org/rfc/rfc8126.html].
 
 Additions and updates to the registries are more involved. 
 The reason for that is that registration consumes subtractable resources (eg. prefix codes in a finite namespace), and while workarounds can always be used to extend a namespace, we prefer to leave this complexity out of specifications bearing weight in production deployments, much less ones undergoing formal standardization. 
-For this, we use a separate template, which includes contact information for a [Change Controller][] that should be as future-proofed as possible (multiple entries are fine for this purpose as fallbacks).
+For this, we use a separate template, which includes contact information for a [Change Controller][https://www.rfc-editor.org/rfc/rfc8126.html#page-11] per-registration that should be as future-proofed as possible (multiple entries are fine for this purpose as fallbacks).
 
 Additionally, if we consider the long-term durability of content that relies on multiformats, it is desirable to avoid an excessive proliferation of options as that makes archiving them harder if you wish to guarantee long-term decodability (where by long-term we mean centuries).
 
