@@ -1,87 +1,164 @@
-# Contributing
+---
+editors:
+  - name: Robin Berjon
+    email: robin@berjon.com
+    url: https://berjon.com/
+    github: darobin
+    twitter: robinberjon
+    mastodon: "@robin@mastodon.social"
+    affiliation:
+        name: Protocol Labs
+        url: https://protocol.ai/
+  - name: Juan Caballero
+    email: bumblefudge@learningproof.xyz
+    url: https://learningproof.xyz
+    github: bumblefudge
+    twitter: by_caballero
+    mastodon: "@by_caballero@mastodon.social"
+    affiliation:
+        name: LearningProof XYZ
+        url: https://learningproof.xyz
+reviewers:
+  - name: Rod Vagg
+    github: rvagg
+  - name: Volker Mische
+    github: vmx
+---
 
-[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
-[![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)  
+# Multiformats Governance Overview
 
-Want to hack on multiformats? Awesome! Here are instructions to get you started.
-They are not perfect yet. Please let us know what feels wrong or incomplete.
+Each self-describing protocol values defined by one of the multiformats specifications occupies a finite namespace of registries.
+As such, they are long-term investments towards broadly-useful utilities, and many of the current entries are already foundational low-level building blocks for both data and network layers and are used in [IPFS](https://ipfs.tech), [IPLD](https://ipld.io), [libp2p](https://libp2p.io/), and beyond. 
+As a result, it is particularly important that these values be managed in such a way that guarantees that they are maximally reliable, interoperable, useful, and safe. 
+This document captures the process that is used to manage the multiformats specifications and the registries that support them.
 
-Multiformats is an Open Source project and we welcome contributions of all sorts.
-There are many ways to help, from reporting issues, contributing code, and
-helping us improve our community.
-
-### Topics
+## Topics
 
 - [Topics](#topics)
-- [Security Issues](#security-issues)
-- [Community Guidelines](#community-guidelines)
-- [Reporting Issues](#reporting-issues)
-- [Protocol Design](#protocol-design)
-- [Implementation Design](#implementation-design)
-- [Community Improvement](#community-improvement)
-- [Translations](#translations)
-- [Helping in other ways](#helping-in-other-ways)
+- [Introduction](#introduction)
+- [Code of Conduct and Ways to Contribute](#code-of-conduct-and-ways-to-contribute)
+- [The Process](#the-process)
+  - [Reporting Issues](#reporting-issues)
+  - [Multiformats Protocol Specifications](#multiformats-protocol-specifications)
+  - [Multiformats Protocol Refinements](#multiformats-protocol-refinements)
+  - [Multiformats Registries](#multiformats-registries)
+  - [Multiformats Registrations](#multiformats-registrations)
+- [Acknowledgements](#acknowledgements)
 
-### Security Issues
+## Introduction
 
-The Multiformats protocols and their implementations are still in heavy development. This means that there may be problems in our protocols, or there may be mistakes in our implementations. And many people are already running multiformat code in their machines (such as with [IPFS](https://github.com/ipfs/ipfs). So we take security vulnerabilities very seriously. If you discover a security issue, please bring it to our attention right away!
+The expectation is that once a format specification and a critical mass of entries in its registry both reach "stable" status, changes to the protocol-and-format specifications themselves should be limited and are more likely to be clarifications or bug fixes. 
+This goes even more so once stable specifications are submitted for standardization in standards bodies, at which point registrations and changes of status to registrations will be the vast majority of changes accepted. 
 
-If you find a vulnerability that may affect live deployments -- for example, expose a remote execution exploit -- please send your report privately to juan@ipfs.io. Please DO NOT file a public issue.
+At all three stages in their lifecycle, however, the process is relatively lightweight and based on pull request review (if accepted to a standardization body, horizontal review may be solicited over email lists or communications channels between opening an issue and closing the pull request). 
+All decisions are eventually made by the [Specs Stewards](https://github.com/orgs/ipfs/teams/specs-stewards/members), which correspond to the IETF concept of "Registrars" triaging and guiding issues through the process, on the basis of recommendations from the coordinators of each multiformats project, which are the primary Experts in the IETF/IANA taxonomy defined in [RFC8126][https://www.rfc-editor.org/rfc/rfc8126.html].
 
-If the issue is a protocol weakness or something not yet deployed, just discuss it openly.
+Additions and updates to the registries are more involved. 
+The reason for that is that registration consumes subtractable resources (eg. prefix codes in a finite namespace), and while workarounds can always be used to extend a namespace, we prefer to leave this complexity out of specifications bearing weight in production deployments, much less ones undergoing formal standardization. 
+For this, we use a separate template, which includes contact information for a [Change Controller][https://www.rfc-editor.org/rfc/rfc8126.html#page-11] per-registration that should be as future-proofed as possible (multiple entries are fine for this purpose as fallbacks).
 
-### Community Guidelines
+Additionally, if we consider the long-term durability of content that relies on multiformats, it is desirable to avoid an excessive proliferation of options as that makes archiving them harder if you wish to guarantee long-term decodability (where by long-term we mean centuries).
 
-We want to keep the Multiformats community awesome, growing and collaborative. We need your help to keep it that way. To help with this we've come up with some general guidelines for the community as a whole:
+## Code of Conduct and Ways to Contribute
 
-- Be nice: Be courteous, respectful and polite to fellow community members: no regional, racial, gender, or other abuse will be tolerated. We like nice people way better than mean ones!
+Please be aware that all interactions related to multiformats are subject to the IPFS [Code of Conduct][]; some of this work may move to standards bodies in the future and be bound as well by the relevant codes of conduct there.
 
-- Encourage diversity and participation: Make everyone in our community feel welcome, regardless of their background and the extent of their contributions, and do everything possible to encourage participation in our community.
+If you're interested in proposing and championing a new multiformat (in addition to multihash, multibase, and so on), [open an "Ideas" discussion](https://github.com/multiformats/multiformats/discussions/categories/ideas) in this repository, explaining in as much detail as you're prepared to champions:
+1. the problem it solves,
+2. the name of the format, 
+3. which current multiformats it would use (and if it would require any new registrations in those formats), 
+4. how many new registrations it would require in the multicodec table specific to your format (see the [Multiformats Registries section below](#multiformats-registries)),
+5. existing prototypes or implementations, if any, and 
+6. why you think it should become *one of* the multiformats. 
 
-- Keep it legal: Basically, don't get anybody in trouble. Share only content that you own, do not share private or sensitive information, and don't break laws.
+If you want to implement a multiformat in a new language or in a new architecture, open an issue in the main repository for the relevant multiformat: for instance, if you want to write `rust-multibase`, then [open an issue](https://github.com/multiformats/multibase/issues/new?assignees=&labels=implementation&projects=&template=IMPLEMENTATION-ANNOUNCEMENT.yml) in the `multiformats/multibase` repository. 
+This will allow others to know that you're working on it, and potentially join in the effort.
 
-- Stay on topic: Make sure that you are posting to the correct channel and avoid off-topic discussions. Remember when you update an issue or respond to an email you are potentially sending to a large number of people. Please consider this before you update. Also remember that nobody likes spam.
+And if you're just curious or bring experience to the table that might offer new insights, Feel free to [review issues and open new ones](https://github.com/multiformats/multiformats/issues).
+Horizontal review and outside perspectives are just as welcome as code contributions and hard research.
 
-There is also a more extensive [https://github.com/ipfs/community/blob/master/code-of-conduct.md](code-of-conduct.md) which we follow, which can be found as part of the related IPFS organisation.
+## The Process
+
+This process is intended to organize productive and friendly discussions around the evolution and maintenance of multiformats, with an eye towards high reliability including over long periods of time for registrations that proceed to "stable" status.
+
+This repository is the clearing house for high-level questions about how the registries and the protocols they serve fit together, implementations, and governance. 
+If you are unsure where to start, an issue here is usually best.
 
 ### Reporting Issues
 
-If you find bugs, mistakes, inconsistencies in the Multiformats specs, code or
-documents, please let us know by filing an issue at the appropriate issue
-tracker. No issue is too small.
+If you find bugs, mistakes, inconsistencies in the various Multiformats specs, or contradictions and incompatibilities between them, please let us know by filing an issue. No issue is too small.
 
-### Protocol Design
+Multiformats are foundational, which in turn makes security issues with multiformats specs and implementations particularly important.
+If you find a vulnerability that may affect live deployments – for example, expose a remote execution exploit – please disclose it responsibly and send your report privately to [security@ipfs.io](mailto:security@ipfs.io), please **DO NOT** file a public issue.
 
-When considering protocol design proposals, we are looking for:
+We have issue templates for the following types of issue:
+- request clarity on (or report possible bug in) documentation (here and per-project)
+- propose a new multi- project (here)
+- volunteer to translate docs or install instructions (per-project)
+- bug report (per-project and per-installation)
+- registration: `reserved` (per-project)
+- registration: `draft` (per-project)
+- registration: update `reserved` or `draft` to `final` (per-project)
 
-- A description of the problem this design proposal solves
-- Discussion of the tradeoffs involved
-- Review of other existing solutions
-- Links to relevant literature (RFCs, papers, etc)
-- Discussion of the proposed solution
+### Multiformats Protocol Specifications
 
-Please note that protocol design is hard, and meticulous work. You may need to review existing literature and think through generalized use cases.
+The process to make changes to multiformats specifications is to file an issue or pull request and discuss the change accordingly.
 
-### Implementation Design
+When considering proposals for new protocols or major changes to an existing one, we are looking for:
 
-When considering design proposals for implementations, we are looking for:
+- A description of the problem this design proposal solves.
+- Discussion of the tradeoffs involved.
+- Review of other existing solutions.
+- Links to relevant literature (RFCs, papers, etc.).
+- Discussion of the proposed solution.
 
-- A description of the problem this design proposal solves
-- Discussion of the tradeoffs involved
-- Discussion of the proposed solution
+Please note that protocol design is hard, and meticulous, long-term work. 
+You may need to review existing literature and think through generalized use cases. 
+You need to be prepared to discuss corner cases in potentially frustrating detail.
 
-### Community Improvement
+### Multiformats Protocol Refinements
 
-The Multiformats community requires maintenance of various "public infrastructure" resources. These include documentation, GitHub repositories, CI build bots, and more. There is also helping new users with questions, spreading the word about Multiformats, and so on. Soon, we will be planning and running conferences. Please get in touch if you would like to help out.
+Even though protocol specifications harden over time and become "stable", and may even move to standards organizations, they are never permanent and never completed. 
+Improvements, errata, implementation reports, and various forms of guidance can be collected here in between major versions even for more rigidly versioned publication processes.
 
-### Translations
+### Multiformats Registries
 
-This community moves very fast, and documentation swiftly gets out of date. If you would like to add a translation, please open an issue and ask the project captain for a given repository before filing a pull request, so that we do not waste efforts.
+The primary function of multiformats is to support multiple value encodings registered in an organized and interoperable way.
+In turn, this requires the ability to register new encodings for each multiformat type.
+Encodings are indicated using some form of flag (e.g. a prefix) and such the registries of these flags can become exhausted (e.g. smaller corners of the group, like the single-byte range), congested (if commonly-used encodings require abnormally long flags), or "squatted" (i.e. reserved too early without proven adoption and utility).
 
-### Email List
+Essentially, registrations and re-registrations proceed through the following steps-- if all requirements are already met at time of initial registration, these can be collapsed.
+Essentially, they are:
+- "Reserved" entries can be inserted directly by protocol designers or Stewards to prevent interoperability or functional pitfalls
+- "Reserved" entries can also be submitted on an [Experimental Use](https://www.rfc-editor.org/rfc/rfc8126.html#section-4.2) basis. Registrations at this level are essentially courtesies to other registrants and invitations to collaborate or provide feedback. These can be deprecated in favor of competing "Draft" or "Final" proposals for the same unique entry code.
+- "Draft" entries can be submitted by mature projects that can reasonably document the requirements below and pass [Expert Review](https://www.rfc-editor.org/rfc/rfc8126.html#section-4.5)
+- "Final" entries must document the complete requirements below and pass review on a [Specification Required](https://www.rfc-editor.org/rfc/rfc8126.html#section-4.6) basis.
 
-We do not have an email listserv; all of our conversation is in GitHub. If you would like one, please post in [this issue](https://github.com/multiformats/multiformats/issues/9).
+### Multiformats Registrations
 
-### Helping in other ways
+In order to ensure that our registries are as extensible as they need to be but do not suffer from over-use, we have a set of criteria which are used to ensure that only encodings that broadly benefit the community are registered.
 
-Protocol Labs occasionally is able to hire developers for part time or full time positions, to work on Multiformats. If you are interested, check out [the job listings](http://protocol.ai/join/). If you'd like to help in other ways, please file an issue.
+In order to be accepted for registration as draft, an encoding MUST:
+
+* Volunteer at least one person who will be available to answer questions and address issues through the registration period and for some time after the encoding is accepted. 
+* Additionally, contact information for a change controller (not necessarily the same person as above, ideally an organization assuming long-term responsibility for systems using the multiformat) in case of updates to or disputes around an entry.
+* Provide evidence that the encoding is supported in at least two production implementations.
+* Describe a convincing use case for the deployment of this specific encoding.
+* Produce a specification indicating how to process it at a level of detail that makes implementations testable. (References to an external specification is acceptable if it comes from a body with sufficient durability guarantees.)
+
+And, for that registration to proceed to `final` designation, it must also
+* Provide a comprehensive test suite sufficient to support independent interoperable implementations, or at least be comprised entirely of technologies that are already mature and have test suites.
+* Produce a specification indicating how to process it at a level of detail that makes multiple independent implementations demonstrably interoperable.
+
+If an encoding seems plausible but does not yet fulfil all requirements, it can be registered with a `draft` status.
+In exceptional cases, consensus of the Stewards and Experts can excuse one of the above requirements. 
+
+Encodings with a `draft` status should be revisited by [Specs Stewards](https://github.com/orgs/ipfs/teams/specs-stewards/members) regularly.
+If after some reasonable amount of time (enough to make progress, but ideally no more than a year) a `draft` encoding has not resolved issues with its registration, it will become `deprecated`.
+After an encoding is `deprecated` for some time at the discretion of the Stewards and Experts, decided to be sufficient for its use to be reasonably considered eliminated or historical, its code becomes available for reuse (but remains listed under new entries as `deprecated`). 
+
+Accepted encodings that meet all of the requirements above (confirmed by the Experts) will bee granted a status of `permanent` within a reasonable amount of time by the Stewards.
+
+## Acknowledgements
+
+This document is an iteration of the [original contributing document](https://github.com/multiformats/multiformats/commit/ac7a9569fe15c548151f1e9350b19600e308dd97#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5).
