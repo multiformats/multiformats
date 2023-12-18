@@ -17,13 +17,12 @@ See [contributing.md][./contributing.md] for more details on governance and proc
 Currently, we have the following formats, each of which corresponds to a specification and a registry. 
 More formats are being discussed and may be added over time, but the following are the mature ones to date:
 
-| Repo | Maintainer | Specification |
-|------|---------|--------|------|
-| [multiaddr](https://github.com/multiformats/multiaddr)| stable | [WIP](https://github.com/multiformats/multiaddr/tree/doc/internet-draft) |
-| [multibase](https://github.com/multiformats/multibase) | stable | [W3C CCG](https://github.com/w3c-ccg/multibase) |
-| [multicodec](https://github.com/multiformats/multicodec)| stable | TBD |
-| [multihash](https://github.com/multiformats/multihash)| stable | [W3C CCG](https://github.com/w3c-ccg/multihash) |
-
+| Repo | Status | Specification |
+| ---- | --- | --- |
+| [multiaddr](https://github.com/multiformats/multiaddr)   | stable | TBD |
+| [multibase](https://github.com/multiformats/multibase)   | stable | [W3C CCG](https://github.com/w3c-ccg/multibase) |
+| [multicodec](https://github.com/multiformats/multicodec) | stable | TBD |
+| [multihash](https://github.com/multiformats/multihash)   | stable | [W3C CCG](https://github.com/w3c-ccg/multihash)  |
 
 See the project directory, below, for implementations and other related repositories.
 
