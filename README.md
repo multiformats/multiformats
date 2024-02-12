@@ -10,7 +10,7 @@
 Multiformats is a set of self-describing protocol values. 
 These values are foundational in that they are low-level building blocks for both data and network layers of the composable protocols making up IPFS, IPLD, libp2p, and many other decentralized data systems. 
 This repository's issues and pull requests are currently the primary venue for the coordination between the various registries making up the group, each of which is separately being hardened as specifications and public, formal registries over time.  
-See [contributing.md][./contributing.md] for more details on governance and process.
+See [contributing.md](./contributing.md) for more details on governance and process.
 
 ## Current Registries
 
